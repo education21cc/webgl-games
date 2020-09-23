@@ -43,12 +43,12 @@
 <body>
 	<div id="gameContainer">
 		<canvas id="unity-canvas" data-pixel-art=""></canvas>
-		<script src="Build/web.loader.js"></script>
+		<script src="Build/FlashCards.loader.js"></script>
 		<script>
 			createUnityInstance(document.querySelector("#unity-canvas"), {
-				dataUrl: "Build/web.data.br",
-				frameworkUrl: "Build/web.framework.js.br",
-				codeUrl: "Build/web.wasm.br",
+				dataUrl: "Build/FlashCards.data.unityweb",
+				frameworkUrl: "Build/FlashCards.framework.js.unityweb",
+				codeUrl: "Build/FlashCards.wasm.unityweb",
 				streamingAssetsUrl: "StreamingAssets",
 				companyName: "Education21CC",
 				productName: "FlashCards",
@@ -89,7 +89,50 @@
 				}
 				window.addEventListener('resize', onResize);
 				onResize();
+				console.log('init')
 			});
+
+			function setGameData(gameData) {
+				send({
+					type: 'setGameData',
+					data: gameData
+				});
+			}
+
+			function back() {
+				send({
+					type: 'back'
+				});
+			}
+
+			window.exit = function() {
+				send({
+					type: 'exit'
+				});
+			}
+			
+			function send(payload) {
+				if (window.hasOwnProperty("webkit") && window.webkit.hasOwnProperty("messageHandlers")){
+					var stringifiedMessageObj = JSON.stringify(payload);
+					// Send to In App Browser context
+					webkit.messageHandlers.cordova_iab.postMessage(stringifiedMessageObj);
+				}
+				else {
+					parent.postMessage(payload, '*');
+				}
+			}
+
+			window.GAMEDATA = null;
+			window.addEventListener("message", receiveMessage, false);
+			function receiveMessage(msg) {
+				GAMEDATA = msg.data;
+			}
+
+			function getGameData() {
+				console.log('attempting to get game data ' + window.GAMEDATA)
+				return window.GAMEDATA;
+			}   
+
 		</script>
 	</div>
 </body>
