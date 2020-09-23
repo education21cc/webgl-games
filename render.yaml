@@ -1,0 +1,6 @@
+services:
+# - type: web
+#   headers:
+#   - path: /*
+#     name: X-Frame-Options
+#     value: *
