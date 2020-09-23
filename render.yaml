@@ -1,6 +1,21 @@
 services:
-# - type: web
-#   headers:
-#   - path: /*
-#     name: X-Frame-Options
-#     value: *
+- type: web
+  headers:
+  - path: /**/*.br
+    name: Content-Encoding
+    value: br
+  - path: /**/*.js.br
+    name: Content-Encoding
+    value: br
+  - path: /**/*.js.br
+    name: Content-Type
+    value: text/javascript
+  - path: /**/*.wasm.br
+    name: Content-Encoding
+    value: br
+  - path: /**/*.wasm.br
+    name: Content-Type
+    value: application/wasm
+  - path: /**/*.wasm
+    name: Content-Type
+    value: application/wasm
