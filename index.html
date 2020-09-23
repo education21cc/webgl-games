@@ -89,6 +89,7 @@
 				}
 				window.addEventListener('resize', onResize);
 				onResize();
+				console.log('init')
 			});
 
 			function setGameData(gameData) {
@@ -128,6 +129,7 @@
 			}
 
 			function getGameData() {
+				console.log('attempting to get game data ' + window.GAMEDATA)
 				return window.GAMEDATA;
 			}   
 
