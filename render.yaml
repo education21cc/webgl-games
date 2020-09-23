@@ -25,3 +25,6 @@ services:
   - path: /**/*wasm.unityweb
     name: Content-Encoding
     value: br
+  - path: /**/*js.unityweb
+    name: Content-Encoding
+    value: br
