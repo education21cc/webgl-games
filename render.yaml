@@ -19,3 +19,6 @@ services:
   - path: /**/*.wasm
     name: Content-Type
     value: application/wasm
+  - path: /**/*data.unityweb
+    name: Content-Encoding
+    value: br
