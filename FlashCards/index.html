@@ -38,10 +38,9 @@
 			image-rendering: pixelated;
 			-ms-interpolation-mode: nearest-neighbor;
 		}
-
-		/*  BIN BIN BIN BIN BIN !!! */
 	</style>
 	<link href="loading.css" rel="stylesheet"/>
+
 </head>
 
 <body>
@@ -57,7 +56,6 @@
 				</span>
 			</div>
 	</div>
-
 	<div id="gameContainer">
 		<canvas id="unity-canvas" data-pixel-art=""></canvas>
 		<script src="Build/FlashCards.loader.js"></script>
@@ -125,32 +123,33 @@
 				});
 			}
 
-			window.exit = function () {
+			window.exit = function() {
 				send({
 					type: 'exit'
 				});
 			}
-
+			
 			function send(payload) {
-				if (window.hasOwnProperty("webkit") && window.webkit.hasOwnProperty("messageHandlers")) {
+				if (window.hasOwnProperty("webkit") && window.webkit.hasOwnProperty("messageHandlers")){
 					var stringifiedMessageObj = JSON.stringify(payload);
 					// Send to In App Browser context
 					webkit.messageHandlers.cordova_iab.postMessage(stringifiedMessageObj);
-				} else {
+				}
+				else {
 					parent.postMessage(payload, '*');
 				}
 			}
 
 			window.GAMEDATA = null;
 			window.addEventListener("message", receiveMessage, false);
-
 			function receiveMessage(msg) {
 				GAMEDATA = msg.data;
 			}
 
 			function getGameData() {
 				return window.GAMEDATA;
-			}
+			}   
+
 		</script>
 	</div>
 </body>
