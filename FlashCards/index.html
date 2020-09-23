@@ -23,6 +23,7 @@
 
 		div#gameContainer canvas {
 			position: absolute;
+			display: none;
 		}
 
 		div#gameContainer canvas[data-pixel-art="true"] {
@@ -37,10 +38,26 @@
 			image-rendering: pixelated;
 			-ms-interpolation-mode: nearest-neighbor;
 		}
+
+		/*  BIN BIN BIN BIN BIN !!! */
 	</style>
+	<link href="loading.css" rel="stylesheet"/>
 </head>
 
 <body>
+	<div class="loading-background">
+		<div class='white-block'>
+			<div class='outset'></div>
+			<div class='blue-block'></div>
+		</div>
+		<div class='subtext'>
+				Stay curious
+				<span class='dots'>
+					<span class='dot1'>.</span><span class='dot2'>.</span><span class='dot3'>.</span>
+				</span>
+			</div>
+	</div>
+
 	<div id="gameContainer">
 		<canvas id="unity-canvas" data-pixel-art=""></canvas>
 		<script src="Build/FlashCards.loader.js"></script>
@@ -56,6 +73,8 @@
 			}).then(function (instance) {
 				var canvas = instance.Module.canvas;
 				var container = canvas.parentElement;
+				canvas.style.display = "block";
+
 				function onResize() {
 					var w;
 					var h;
@@ -88,8 +107,9 @@
 					scaleToFit = true;
 				}
 				window.addEventListener('resize', onResize);
+				window.addEventListener('orientationchange', onResize);
+
 				onResize();
-				console.log('init')
 			});
 
 			function setGameData(gameData) {
@@ -105,34 +125,32 @@
 				});
 			}
 
-			window.exit = function() {
+			window.exit = function () {
 				send({
 					type: 'exit'
 				});
 			}
-			
+
 			function send(payload) {
-				if (window.hasOwnProperty("webkit") && window.webkit.hasOwnProperty("messageHandlers")){
+				if (window.hasOwnProperty("webkit") && window.webkit.hasOwnProperty("messageHandlers")) {
 					var stringifiedMessageObj = JSON.stringify(payload);
 					// Send to In App Browser context
 					webkit.messageHandlers.cordova_iab.postMessage(stringifiedMessageObj);
-				}
-				else {
+				} else {
 					parent.postMessage(payload, '*');
 				}
 			}
 
 			window.GAMEDATA = null;
 			window.addEventListener("message", receiveMessage, false);
+
 			function receiveMessage(msg) {
 				GAMEDATA = msg.data;
 			}
 
 			function getGameData() {
-				console.log('attempting to get game data ' + window.GAMEDATA)
 				return window.GAMEDATA;
-			}   
-
+			}
 		</script>
 	</div>
 </body>
