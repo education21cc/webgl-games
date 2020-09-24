@@ -1,5 +1,7 @@
 services:
 - type: web
+  name: education21cc-webgl-games
+  env: static
   headers:
   - path: /**/*.br
     name: Content-Encoding
