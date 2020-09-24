@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content= "width=device-width, user-scalable=no">
+    <title>%UNITY_WEB_NAME% </title>
+    <link href="loading.css" rel="stylesheet"/>
+    <script src="%UNITY_WEBGL_LOADER_URL%"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+
+    <script>
+
+        function UnityProgress(gameInstance, progress) {
+            const text = "Stay curious";
+
+            if (!gameInstance.Module)
+            return;
+
+            if (!gameInstance.progress) {
+                gameInstance.progress = document.createElement("div");
+                gameInstance.progress.classList.add("loading-background")
+                gameInstance.progress.innerHTML = "<div class='white-block'><div class='outset'></div><div class='blue-block'></div></div><div class='subtext'>" + text + "<span class='dots'><span class='dot1'>.</span><span class='dot2'>.</span><span class='dot3'>.</span></span></div>";
+                document.body.appendChild(gameInstance.progress);
+            }
+            if (progress == 1) {
+                gameInstance.progress.style.display = "none";
+                document.body.removeChild(gameInstance.progress);
+            }
+        }    
+
+
+        function loadGame() {
+            UnityLoader.compatibilityCheck = function (e, t) {t();}; // <== Disable webgl warning!
+            window.unityInstance = UnityLoader.instantiate("unityContainer", "%UNITY_WEBGL_BUILD_URL%", {onProgress: UnityProgress, Module: {
+                onRuntimeInitialized: function () {
+                    UnityProgress(window.unityInstance, "complete");
+                    load();
+                },
+            }});
+        }
+        loadGame();
+
+        function setGameData(gameData) {
+            send({
+                type: 'setGameData',
+                data: gameData
+            });
+        }
+
+        function back() {
+            send({
+                type: 'back'
+            });
+        }
+
+        window.exit = function() {
+            send({
+                type: 'exit'
+            });
+        }
+        
+        function send(payload) {
+            if (window.hasOwnProperty("webkit") && window.webkit.hasOwnProperty("messageHandlers")){
+                var stringifiedMessageObj = JSON.stringify(payload);
+                // Send to In App Browser context
+                webkit.messageHandlers.cordova_iab.postMessage(stringifiedMessageObj);
+            }
+            else {
+                parent.postMessage(payload, '*');
+            }
+        }
+
+        window.GAMEDATA = null;
+        window.addEventListener("message", receiveMessage, false);
+        function receiveMessage(msg) {
+            GAMEDATA = msg.data;
+        }
+
+        function getGameData() {
+            return window.GAMEDATA;
+        }   
+
+        function load() {
+            var container = document.querySelector("#unityContainer");
+            var initialWidth = parseInt(container.style.width, 10);
+            var initialHeight = parseInt(container.style.height, 10);
+            container.style.width = 'auto';
+            container.style.height = 'auto';
+            if (initialWidth < initialHeight) {
+                // portrait
+                const canvas = container.querySelector("canvas");
+                const observer = new MutationObserver(function(mutationsList, observer) {
+                    // We wait for height to change on the canvas before setting style.height = '100vh'
+                    for(let mutation of mutationsList) {     
+                        if (mutation.type === 'attributes' && mutation.attributeName == 'height') {
+                            observer.disconnect();
+                            canvas.style.height = '100vh';
+                        }
+                    }
+                });
+                observer.observe(canvas, { attributes: true, childList: false, subtree: true });
+            } else {
+                //  landscape
+                function resize() {
+                    if(window.innerWidth / window.innerHeight > initialWidth / initialHeight) {
+                        // add pillowbox padding to the sides
+                        var delta = (window.innerWidth / window.innerHeight - initialWidth / initialHeight);
+                        container.style.padding = `0 ${(delta * window.innerHeight) /2}px`;
+                    }
+                }
+                resize();
+                window.addEventListener('resize', resize, false);
+                window.addEventListener('orientationchange', resize, false);
+            }
+        }
+
+    </script>
+    <style>
+        html, body { 
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            height: 100%; 
+        }
+
+        #unityContainer {
+            top: 50%;
+            transform: translateY(-50%); 
+            max-height: 100%;
+            max-width: 100%;
+            margin: auto !important;
+            background: none !important;
+        }
+
+        #back {
+            position: fixed;
+            top: 16px;
+            left: 8px;
+            z-index: 2
+        }
+
+        .console {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: none; /** uncomment to show debug console */
+            flex-direction: column;
+        }
+
+
+        .console .header {
+            height: 16px;
+            color: white;
+            background: maroon;
+        }
+
+        .console textarea {
+            flex: 1;
+            display: none;
+        }
+
+        .console #reload {
+            display: none;
+        }
+
+        .console.open {
+            height: 100%;
+        }
+
+        .console.open #configText {
+            display: block;
+        }
+
+        .console.open #reload {
+            display: block;
+        }
+    </style>
+  </head>
+  
+  <body>
+    <div id="back" onClick="back()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30.04" height="30.04" viewBox="0 0 30.04 30.04"><defs><style>.a{fill:#fff;}.a,.b{stroke:#283583;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75px;}.b{fill:none;}</style></defs><title>Back</title><circle class="a" cx="15.02" cy="15.02" r="14.65"/><path class="b" d="M11.64,16" transform="translate(-0.97 -0.93)"/><path class="b" d="M11.63,16" transform="translate(-0.97 -0.93)"/><path class="b" d="M20.38,22.88" transform="translate(-0.97 -0.93)"/><line class="b" x1="19.39" y1="8.16" x2="10.65" y2="15.02"/><line class="b" x1="19.39" y1="21.98" x2="10.65" y2="15.11"/></svg>
+    </div>
+    <div id="unityContainer" style="width: %UNITY_WIDTH%px; height: %UNITY_HEIGHT%px; margin: auto"></div>
+    <div class="console">
+        <section class="header">
+            game config
+        </section>
+        <textarea id="configText">%UNITY_CUSTOM_GAME_DATA%</textarea>
+        <button id="reload">Reload game!</button>
+    </div>
+    <script>
+
+        var debugEnabled = window.location.search.indexOf("debug") > -1;
+        if (debugEnabled){
+            document.querySelector(".console").style.display = "flex";
+    
+            try {
+                //
+                var asString = document.querySelector("#configText").value;
+                if (asString) {
+                    var object = JSON.parse(asString);
+                    var str = JSON.stringify(object, undefined, 4);
+                    document.querySelector("#configText").value = str;
+                    window.GAMEDATA = object;
+                    loadGame();
+                }
+            } catch(e){
+                console.warn("Error trying to read JSON\n", asString);
+            }
+    
+            document.querySelector(".console .header").addEventListener("click", function() {
+                document.querySelector(".console").classList.toggle("open");
+            });
+            document.querySelector("#reload").addEventListener("click", function() {
+                var asString = document.querySelector("#configText").value;
+                try {
+                    var obj = JSON.parse(asString);
+                    if (obj && typeof obj === "object") {
+                        window.GAMEDATA = obj;
+                        document.querySelector(".console").classList.remove("open");
+                        loadGame();
+                    }
+                }
+                catch (e) { 
+                    alert("Could not parse gamedata config! It's not valid json.")
+                }
+            });
+        }
+    </script>
+  </body>
+  
+</html>
+
