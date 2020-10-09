@@ -33,4 +33,4 @@ services:
     value: br
   - path: /**/json/*.json
     name: Access-Control-Allow-Origin
-    value: *
+    value: "*"
