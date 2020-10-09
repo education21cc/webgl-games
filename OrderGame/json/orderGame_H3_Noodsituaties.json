@@ -1,0 +1,64 @@
+{
+    "userId": 1,
+    "settings": {
+        "muted": false
+    },
+    "content": {
+        "stepsAmount": 5,
+        "skipOpeningScreen": true,
+        "stars": 1
+    },
+    "translations": [
+      {"key": "step_1",
+        "value": "Stop onmiddellijk met werken (eigen veiligheid)"},
+      {"key": "step_2",
+        "value": "Verwittig je opdrachtgever en volg zijn instructies"},
+      {"key": "step_3",
+        "value": "Ga naar de evacuatieplaats en loop bovenwinds bij gevaarlijke dampen"},
+      {"key": "step_4",
+        "value": "Meld je op de evacuatieplaats"},
+      {"key": "step_5",
+        "value": "Pas de evacuatieplaats verlaten als daar toestemming voor is."},
+
+      {"key": "task",
+        "value": "Zet in de juiste volgorde:"},
+
+        {"key": "completed",
+          "value": "verdiend"},
+      {"key": "page",
+        "value": "Pagina:"},
+      {"key": "of",
+        "value": " van "},
+      {"key": "yourscore",
+        "value": "Je score:"},
+      {"key": "doneButton",
+        "value": "Klaar"},
+      {"key": "nextButton",
+        "value": "Volgende"},
+      {"key": "continue",
+        "value": "Verder"},
+      {"key": "retry",
+        "value": "Opnieuw"},
+      {"key": "exit",
+        "value": "Afsluiten"},
+
+      {"key": "feedbackShortCorrect",
+        "value": "Goed"},
+      {"key": "feedbackShortIncorrect",
+        "value": "Helaas"},
+      {"key": "resultWithStars",
+        "value": "Gefeliciteerd!"},
+      {"key": "resultNoStars",
+        "value": "Wat vervelend voor je..."},
+      {"key": "accomplish",
+        "value": "te behalen"},
+
+      {"key": "introduction_short",
+        "value": "Noodsituaties"},
+      {"key": "introduction_long",
+        "value": "Als het alarm afgaat (optisch en akoestisch) omdat er een ramp gebeurt, dan moet je de juiste dingen in de goede volgorde doen. Dat is de opdracht van dit spel: zet de handelingen in de juiste volgorde en win 1 ster. Succes!"}
+      ],
+    "levelsCompleted": [
+
+    ]
+}
