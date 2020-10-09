@@ -1,0 +1,232 @@
+{
+    "userId": 1,
+    "settings": {
+        "muted": false
+    },
+    "content": {
+        "imagesPath": "https://21cceducation.nl/content/games/images/image.php/?image=combinationGame/",
+        "maxStarsReward": 3,
+
+        "shapes": [
+          {"id": 1,
+            "name": "square",
+          "filenameBase": "squareBase.png",
+          "filenameBorder": "squareBorder.png",
+          "filenameDiagonalLine": "squareDiagonalLine.png",
+          "filenameShadow": "squareShadow.png"},
+          {"id": 2,
+            "name": "circle",
+          "filenameBase": "circleBase.png",
+          "filenameBorder": "circleBorder.png",
+          "filenameDiagonalLine": "circleDiagonalLine.png",
+          "filenameShadow": "circleShadow.png"},
+          {"id": 3,
+            "name": "triangle",
+          "filenameBase": "triangleBase.png",
+          "filenameBorder": "triangleBorder.png",
+          "filenameDiagonalLine": "triangleDiagonalLine.png",
+          "filenameShadow": "triangleShadow.png"},
+          {"id": 4,
+            "name": "diamond",
+          "filenameBase": "diamondBase.png",
+          "filenameBorder": "diamondBorder.png",
+          "filenameDiagonalLine": "diamondDiagonalLine.png",
+          "filenameShadow": "diamondShadow.png"}
+        ],
+
+        "colors": [
+          {"id": 1,
+            "name": "white",
+          "hexBase": "FFFFFF"},
+          {"id": 2,
+            "name": "blue",
+          "hexBase": "17479d"},
+          {"id": 3,
+            "name": "green",
+          "hexBase": "158d4a"},
+          {"id": 4,
+            "name": "red",
+          "hexBase": "eb2c34"},
+          {"id": 5,
+            "name": "yellow",
+          "hexBase": "ffdb00"},
+          {"id": 6,
+            "name": "white with red border and diagonal line",
+          "hexBase": "FFFFFF",
+          "hexBorder": "eb2c34",
+          "hexDiagonalLine": "eb2c34"},
+          {"id": 7,
+            "name": "yellow with black border",
+          "hexBase": "ffdb00",
+          "hexBorder": "000000",
+          "hexDiagonalLine": ""},
+          {"id": 8,
+            "name": "white with red border",
+          "hexBase": "FFFFFF",
+          "hexBorder": "eb2c34"}
+        ],
+
+        "symbolColors": [
+          {"id": 1,
+          "name": "black",
+          "hex": "000000"},
+          {"id": 2,
+          "name": "white",
+          "hex": "FFFFFF"},
+          {"id": 3,
+          "name": "blue",
+          "hex": "17479d"},
+          {"id": 4,
+          "name": "red",
+          "hex": "eb2c34"}
+        ],
+
+        "scenarios": [
+          {"id": 1,
+          "title": "",
+          "description": "",
+          "symbolFilename": "smoking.png",
+          "combination":
+            {"shape": 2,
+             "color": 6,
+             "symbolColor": 1}
+          },
+          {"id": 2,
+          "title": "",
+          "description": "",
+          "symbolFilename": "flamingo.png",
+          "combination":
+           {"shape": 2,
+            "color": 2,
+            "symbolColor": 2}
+          },
+          {"id": 3,
+          "title": "",
+          "description": "",
+          "symbolFilename": "frikandel.png",
+          "combination":
+            {"shape": 2,
+             "color": 6,
+             "symbolColor": 1}
+          },
+          {"id": 4,
+          "title": "",
+          "description": "",
+          "symbolFilename": "brusslang.png",
+          "combination":
+          {"shape": 1,
+             "color": 4,
+             "symbolColor": 2}
+          },
+          {"id": 5,
+          "title": "",
+          "description": "",
+          "symbolFilename": "nooduitgang.png",
+          "combination":
+            {"shape": 1,
+             "color": 3,
+            "symbolColor": 2}
+          },
+          {"id": 6,
+          "title": "",
+          "description": "",
+          "symbolFilename": "terrace.png",
+          "combination":
+            {"shape": 3,
+             "color": 7,
+            "symbolColor": 1}
+          },
+          {"id": 7,
+          "title": "",
+          "description": "",
+          "symbolFilename": "cake.png",
+          "combination":
+            {"shape": 1,
+             "color": 3,
+            "symbolColor": 2}
+          }
+        ]
+    },
+
+    "translations": [
+      {"key": "scenario_1_title",
+        "value": "Verbod"},
+      {"key": "scenario_1_description",
+        "value": "Het is hier niet toegestaan om te roken. Hoe ziet dit bord eruit?\n\nKies de vorm van het bord, de kleur van het bord en de kleur van het symbool door op het juiste puntje aan de linker kant te klikken. Je kunt ook van links naar rechts en van boven naar onder swipen."},
+
+      {"key": "scenario_2_title",
+        "value": "Gebod"},
+      {"key": "scenario_2_description",
+        "value": "Je moet hier een opblaasband om hebben.\n\nHoe zou dit bord eruit zien?"},
+
+      {"key": "scenario_3_title",
+        "value": "Verbod"},
+      {"key": "scenario_3_description",
+        "value": "Het is verboden hier frikandellen te eten!\n\nHoe zou dit bord eruit zien?"},
+
+      {"key": "scenario_4_title",
+        "value": "Brandbestrijding"},
+      {"key": "scenario_4_description",
+        "value": "Er is een blusslang aanwezig.\n\nMet welk bord geven wij dit aan?"},
+
+      {"key": "scenario_5_title",
+        "value": "Veiligheidsvoorziening"},
+      {"key": "scenario_5_description",
+        "value": "Je loopt rond in een gebouw. Daar...in de verte...het is de nooduitgang! Er hangen borden die aangeven waar de nooduitgang is.\n\nHoe zien deze borden eruit?"},
+
+      {"key": "scenario_6_title",
+        "value": "Waarschuwing"},
+      {"key": "scenario_6_description",
+        "value": "Je fiets op een dijk. Hier kan een terrasje op de weg zijn gezet van een gezellig restaurant. Je moet goed uitkijken dat je hier niet tegenop fietst.\n\nWat voor bord zal er staan?"},
+
+      {"key": "scenario_7_title",
+        "value": "Veiligheidsvoorziening"},
+      {"key": "scenario_7_description",
+        "value": "Er zijn magische taartjes die je wonden genezen als je ze eet. Waar je deze taartjes kan vinden, is aangegeven op een bepaald bord.\n\nHoe zou dit bord eruit zien?"},
+
+      {"key": "page",
+        "value": "Pagina:"},
+      {"key": "of",
+        "value": " van "},
+      {"key": "yourscore",
+        "value": "Je totale score:"},
+      {"key": "doneButton",
+        "value": "Klaar"},
+      {"key": "nextButton",
+        "value": "Volgende"},
+      {"key": "restartButton",
+        "value": "Opnieuw spelen"},
+      {"key": "exitButton",
+        "value": "Verder"},
+      {"key": "shape-term",
+        "value": "Vorm van het bord"},
+      {"key": "color-term",
+        "value": "Kleur van het bord"},
+      {"key": "symbolColor-term",
+        "value": "Kleur van het symbool"},
+
+        {"key": "completed",
+          "value": "verdiend"},
+      {"key": "feedbackShortCorrect",
+        "value": "Goed"},
+      {"key": "feedbackShortIncorrect",
+        "value": "Helaas"},
+      {"key": "resultWithStars",
+        "value": "Gefeliciteerd!"},
+      {"key": "resultNoStars",
+        "value": "Wat vervelend voor je..."},
+      {"key": "unaccomplished",
+        "value": "Niet behaald"},
+      {"key": "accomplished",
+        "value": "Behaald"},
+
+      {"key": "introduction_short",
+        "value": "Het Boze Borden Spel"},
+      {"key": "introduction_long",
+        "value": "Er zijn verbodsborden, gebodsborden, waarschuwingsborden en borden voor brandbestrijding en veiligheidsvoorziening.\n\nIn dit spel ga je zelf deze borden samenstellen. Er wordt een situatie aangegeven en jij mag daarbij het bord de juiste vorm, kleur en symbool geven. \n\nOm de keuzes te maken kun je het bord naar boven/onder en links/rechts swipen, of de rondjes links en onderin aanklikken. Je kunt 7 sterren verdienen. Succes!"}
+      ],
+
+    "levelsCompleted": [
+
+    ]
+}

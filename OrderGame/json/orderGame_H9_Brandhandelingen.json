@@ -1,0 +1,66 @@
+{
+    "userId": 1,
+    "settings": {
+        "muted": false
+    },
+    "content": {
+        "stepsAmount": 6,
+        "skipOpeningScreen": false,
+        "stars": 1
+    },
+    "translations": [
+      {"key": "step_1",
+        "value": "Jezelf in veiligheid brengen heeft de hoogste prioriteit"},
+      {"key": "step_2",
+        "value": "Melding maken van de brand voor hulpdiensten"},
+      {"key": "step_3",
+        "value": "De omgeving waarschuwen, zodat men zich in veiligheid kan brengen"},
+      {"key": "step_4",
+        "value": "Deuren en ramen sluiten om de zuurstofconcentratie te verlagen"},
+      {"key": "step_5",
+        "value": "Anderen in veiligheid brengen"},
+      {"key": "step_6",
+        "value": "Een veilige blusmethode toepassen als men bevoegd is om dit te doen"},
+
+      {"key": "task",
+        "value": "Zet in de juiste volgorde:"},
+
+      {"key": "page",
+        "value": "Pagina:"},
+      {"key": "of",
+        "value": " van "},
+      {"key": "yourscore",
+        "value": "Je score:"},
+      {"key": "doneButton",
+        "value": "Klaar"},
+      {"key": "nextButton",
+        "value": "Volgende"},
+      {"key": "continue",
+        "value": "Verder"},
+      {"key": "retry",
+        "value": "Opnieuw"},
+      {"key": "exit",
+        "value": "Afsluiten"},
+
+        {"key": "completed",
+          "value": "verdiend"},
+      {"key": "feedbackShortCorrect",
+        "value": "Goed"},
+      {"key": "feedbackShortIncorrect",
+        "value": "Helaas"},
+      {"key": "resultWithStars",
+        "value": "Gefeliciteerd!"},
+      {"key": "resultNoStars",
+        "value": "Wat vervelend voor je..."},
+      {"key": "accomplish",
+        "value": "te behalen"},
+
+      {"key": "introduction_short",
+        "value": "Handelingen bij brand"},
+      {"key": "introduction_long",
+        "value": "Bij elke brand moet op een adequate manier worden gehandeld. Zet de 6 stappen in de juiste volgorde om te laten zien dat je begrijpt hoe je een brand kunt beperken. Je verdient hiermee 1 ster. Succes!"}
+      ],
+    "levelsCompleted": [
+
+    ]
+}

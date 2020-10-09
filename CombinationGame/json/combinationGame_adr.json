@@ -1,0 +1,615 @@
+{
+   "userId":1,
+   "settings":{
+      "muted":false
+   },
+   "content":{
+      "imagesPath":"https://21cceducation.nl/content/games/images/image.php/?image=combinationGame/",
+      "maxStarsReward":13,
+      "adrSetup":true,
+      "randomizeQuestions":true,
+      "shapes":[
+         {
+            "id":1,
+            "name":"diamond",
+            "filenameBase":"adr_diamondbase.png",
+            "filenameBorder":"empty3.png",
+            "filenameDiagonalLine":"empty2.png",
+            "filenameLayer1":"adr_diamondtophalf.png",
+            "filenameLayer2":"adr_diamondstripes.png",
+            "filenameLayer3":"adr_stripeInside.png",
+            "filenameLayer4":"adr_stripedoutlineTop.png",
+            "filenameLayer5":"adr_stripedoutlineBottom.png",
+            "filenameShadow":"diamondShadow.png"
+         }
+      ],
+      "colors":[
+         {
+            "id":1,
+            "name":"orange",
+            "hexBase":"fc7e0c",
+            "hexBorder":"",
+            "hexDiagonalLine":"",
+            "hexLayer1":"",
+            "hexLayer2":"",
+            "hexLayer3":"000000",
+            "hexLayer4":"",
+            "hexLayer5":""
+         },
+         {
+            "id":2,
+            "name":"red",
+            "hexBase":"da251d",
+            "hexBorder":"",
+            "hexDiagonalLine":"",
+            "hexLayer1":"",
+            "hexLayer2":"",
+            "hexLayer3":"000000",
+            "hexLayer4":"",
+            "hexLayer5":""
+         },
+         {
+            "id":3,
+            "name":"green",
+            "hexBase":"4bb033",
+            "hexBorder":"",
+            "hexDiagonalLine":"",
+            "hexLayer1":"",
+            "hexLayer2":"",
+            "hexLayer3":"000000",
+            "hexLayer4":"",
+            "hexLayer5":""
+         },
+         {
+            "id":4,
+            "name":"blue",
+            "hexBase":"0093dd",
+            "hexBorder":"",
+            "hexDiagonalLine":"",
+            "hexLayer1":"",
+            "hexLayer2":"",
+            "hexLayer3":"000000",
+            "hexLayer4":"",
+            "hexLayer5":""
+         },
+         {
+            "id":5,
+            "name":"yellow",
+            "hexBase":"fff200",
+            "hexBorder":"",
+            "hexDiagonalLine":"",
+            "hexLayer1":"",
+            "hexLayer2":"",
+            "hexLayer3":"000000",
+            "hexLayer4":"",
+            "hexLayer5":""
+         },
+         {
+            "id":6,
+            "name":"red top yellow bottom",
+            "hexBase":"fff200",
+            "hexBorder":"",
+            "hexDiagonalLine":"",
+            "hexLayer1":"fd1926",
+            "hexLayer2":"",
+            "hexLayer3":"000000",
+            "hexLayer4":"",
+            "hexLayer5":""
+         },
+         {
+            "id":7,
+            "name":"white",
+            "hexBase":"ffffff",
+            "hexBorder":"",
+            "hexDiagonalLine":"",
+            "hexLayer1":"",
+            "hexLayer2":"",
+            "hexLayer3":"000000",
+            "hexLayer4":"",
+            "hexLayer5":""
+         },
+         {
+            "id":8,
+            "name":"yellow top white bottom",
+            "hexBase":"ffffff",
+            "hexBorder":"",
+            "hexDiagonalLine":"",
+            "hexLayer1":"fff600",
+            "hexLayer2":"",
+            "hexLayer3":"000000",
+            "hexLayer4":"",
+            "hexLayer5":""
+         },
+         {
+            "id":9,
+            "name":"white top black bottom and black dotted outline",
+            "hexBase":"000000",
+            "hexBorder":"",
+            "hexDiagonalLine":"",
+            "hexLayer1":"ffffff",
+            "hexLayer2":"",
+            "hexLayer3":"000000",
+            "hexLayer4":"000000",
+            "hexLayer5":"000000"
+         },
+         {
+            "id":10,
+            "name":"black stripes top white bottom",
+            "hexBase":"ffffff",
+            "hexBorder":"",
+            "hexDiagonalLine":"",
+            "hexLayer1":"000000",
+            "hexLayer2":"ffffff",
+            "hexLayer3":"000000",
+            "hexLayer4":"",
+            "hexLayer5":""
+         }
+      ],
+      "scenarios":[
+         {
+            "id":1,
+            "title":"Deze stof is explosief",
+            "description":"",
+            "symbolFilename":"",
+            "combination":{
+               "color":1,
+               "symbol":5,
+               "adrClass":1
+            }
+         },
+         {
+            "id":2,
+            "title":"Brandbaar gas",
+            "description":"",
+            "symbolFilename":"",
+            "combination":{
+               "color":2,
+               "symbol":2,
+               "adrClass":2
+            }
+         },
+         {
+            "id":3,
+            "title":"Gas onder druk",
+            "description":"",
+            "symbolFilename":"",
+            "combination":{
+               "color":3,
+               "symbol":6,
+               "adrClass":2
+            }
+         },
+         {
+            "id":4,
+            "title":"Giftig gas",
+            "description":"",
+            "symbolFilename":"",
+            "combination":{
+               "color":7,
+               "symbol":6,
+               "adrClass":2
+            }
+         },
+         {
+            "id":5,
+            "title":"Een brandbare vloeistof",
+            "description":"",
+            "symbolFilename":"",
+            "combination":{
+               "color":4,
+               "symbol":3,
+               "adrClass":3
+            }
+         },
+         {
+            "id":6,
+            "title":"Vaste stof die brandbaar is in contact met water",
+            "description":"",
+            "symbolFilename":"",
+            "combination":{
+               "color":4,
+               "symbol":2,
+               "adrClass":4
+            }
+         },
+         {
+            "id":7,
+            "title":"Oxiderende stof",
+            "description":"",
+            "symbolFilename":"",
+            "combination":{
+               "color":5,
+               "symbol":2,
+               "adrClass":5
+            }
+         },
+         {
+            "id":8,
+            "title":"Organische peroxide",
+            "description":"",
+            "symbolFilename":"",
+            "combination":{
+               "color":6,
+               "symbol":1,
+               "adrClass":6
+            }
+         },
+         {
+            "id":9,
+            "title":"Giftige stof",
+            "description":"",
+            "symbolFilename":"",
+            "combination":{
+               "color":7,
+               "symbol":2,
+               "adrClass":7
+            }
+         },
+         {
+            "id":10,
+            "title":"Infectieuze stof",
+            "description":"",
+            "symbolFilename":"",
+            "combination":{
+               "color":7,
+               "symbol":3,
+               "adrClass":7
+            }
+         },
+         {
+            "id":11,
+            "title":"Radioactief materiaal",
+            "description":"",
+            "symbolFilename":"",
+            "combination":{
+               "color":8,
+               "symbol":7,
+               "adrClass":8
+            }
+         },
+         {
+            "id":12,
+            "title":"Bijtend",
+            "description":"",
+            "symbolFilename":"",
+            "combination":{
+               "color":9,
+               "symbol":8,
+               "adrClass":9
+            }
+         },
+         {
+            "id":13,
+            "title":"Diverse gevaarlijke stoffen",
+            "description":"",
+            "symbolFilename":"",
+            "combination":{
+               "color":10,
+               "symbol":9,
+               "adrClass":10
+            }
+         }
+      ],
+      "symbols":[
+         {
+            "id":1,
+            "name":"symbol",
+            "filename":"symbol_fireRound.png"
+         },
+         {
+            "id":2,
+            "name":"symbol",
+            "filename":"symbol_fireFlat.png"
+         },
+         {
+            "id":3,
+            "name":"symbol",
+            "filename":"symbol_skull.png"
+         },
+         {
+            "id":4,
+            "name":"symbol",
+            "filename":"symbol_acid.png"
+         },
+         {
+            "id":5,
+            "name":"symbol",
+            "filename":"symbol_explosion.png"
+         },
+         {
+            "id":6,
+            "name":"symbol",
+            "filename":"symbol_gasBottle.png"
+         },
+         {
+            "id":7,
+            "name":"symbol",
+            "filename":"symbol_radiationSpikes.png"
+         },
+         {
+            "id":8,
+            "name":"symbol",
+            "filename":"symbol_radiationCircle.png"
+         },
+         {
+            "id":9,
+            "name":"symbol",
+            "filename":"empty.png"
+         }
+      ],
+      "symbolColors":[
+         {
+            "id":1,
+            "name":"black",
+            "hex":"000000"
+         }
+      ],
+      "classes":[
+         {
+            "id":1,
+            "name":"klasse 1",
+            "classTitle":"Klasse 1",
+            "classNumber":"1"
+         },
+         {
+            "id":2,
+            "name":"klasse 2",
+            "classTitle":"Klasse 2",
+            "classNumber":"2"
+         },
+         {
+            "id":3,
+            "name":"klasse 3",
+            "classTitle":"Klasse 3",
+            "classNumber":"3"
+         },
+         {
+            "id":4,
+            "name":"klasse 4",
+            "classTitle":"Klasse 4",
+            "classNumber":"4"
+         },
+         {
+            "id":5,
+            "name":"klasse 5.1",
+            "classTitle":"Klasse 5.1",
+            "classNumber":"5.1"
+         },
+         {
+            "id":6,
+            "name":"klasse 5.2",
+            "classTitle":"Klasse 5.2",
+            "classNumber":"5.2"
+         },
+         {
+            "id":7,
+            "name":"klasse 6",
+            "classTitle":"Klasse 6",
+            "classNumber":"6"
+         },
+         {
+            "id":8,
+            "name":"klasse 7",
+            "classTitle":"Klasse 7",
+            "classNumber":"7"
+         },
+         {
+            "id":9,
+            "name":"klasse 8",
+            "classTitle":"Klasse 8",
+            "classNumber":"8"
+         },
+         {
+            "id":10,
+            "name":"klasse 9",
+            "classTitle":"Klasse 9",
+            "classNumber":"9"
+         }
+      ]
+   },
+   "translations":[
+     {"key": "class_1_title", "value": "Ontplofbare stoffen"},
+     {"key": "class_2_title", "value": "Gassen"},
+     {"key": "class_3_title", "value": "Brandbare vloeistoffen"},
+     {"key": "class_4_title", "value": "Brandbare vaste stoffen"},
+     {"key": "class_5_title", "value": "Oxiderende stoffen"},
+     {"key": "class_6_title", "value": "Organisch oxiderend materiaal"},
+     {"key": "class_7_title", "value": "Giftige en infectueuze stoffen"},
+     {"key": "class_8_title", "value": "Radioactieve stoffen"},
+     {"key": "class_9_title", "value": "Bijtende stoffen"},
+     {"key": "class_10_title", "value": "Diverse gevaarlijke stoffen"},
+     {"key": "color_1_title", "value": "Explosief"},
+     {"key": "color_2_title", "value": "Brandbaar"},
+     {"key": "color_3_title", "value": "Onder druk en/of verstikkend"},
+     {"key": "color_4_title", "value": "Dangerous When Wet"},
+     {"key": "color_5_title", "value": "LET OP / verhoogd gevaar"},
+     {"key": "color_6_title", "value": "Brandbaar + Oxiderend"},
+     {"key": "color_7_title", "value": "Geen betekenis / anders"},
+     {"key": "color_8_title", "value": "LET OP / anders"},
+     {"key": "color_9_title", "value": "Speciaal voor bijtende stoffen"},
+     {"key": "color_10_title", "value": "Voor diverse stoffen"},
+      {
+         "key":"scenario_1_title",
+         "value":"Deze stof is explosief"
+      },
+      {
+         "key":"scenario_1_description",
+         "value":""
+      },
+      {
+         "key":"scenario_2_title",
+         "value":"Een brandbaar gas"
+      },
+      {
+         "key":"scenario_2_description",
+         "value":""
+      },
+      {
+         "key":"scenario_3_title",
+         "value":"Een gas onder druk "
+      },
+      {
+         "key":"scenario_3_description",
+         "value":""
+      },
+      {
+         "key":"scenario_4_title",
+         "value":"Een giftig gas"
+      },
+      {
+         "key":"scenario_4_description",
+         "value":""
+      },
+      {
+         "key":"scenario_5_title",
+         "value":"Een brandbare vloeistof"
+      },
+      {
+         "key":"scenario_5_description",
+         "value":""
+      },
+      {
+         "key":"scenario_6_title",
+         "value":"Vaste stof die brandbaar is indien in contact met water"
+      },
+      {
+         "key":"scenario_6_description",
+         "value":""
+      },
+      {
+         "key":"scenario_7_title",
+         "value":"Oxiderende stof"
+      },
+      {
+         "key":"scenario_7_description",
+         "value":""
+      },
+      {
+         "key":"scenario_8_title",
+         "value":"Organische peroxide"
+      },
+      {
+         "key":"scenario_8_description",
+         "value":""
+      },
+      {
+         "key":"scenario_9_title",
+         "value":"Giftige stof"
+      },
+      {
+         "key":"scenario_9_description",
+         "value":""
+      },
+      {
+         "key":"scenario_10_title",
+         "value":"Infectueuze stoffen"
+      },
+      {
+         "key":"scenario_10_description",
+         "value":""
+      },
+      {
+         "key":"scenario_11_title",
+         "value":"Radioactief materiaal"
+      },
+      {
+         "key":"scenario_11_description",
+         "value":""
+      },
+      {
+         "key":"scenario_12_title",
+         "value":"Bijtend"
+      },
+      {
+         "key":"scenario_12_description",
+         "value":""
+      },
+      {
+         "key":"scenario_13_title",
+         "value":"Diverse gevaarlijke stoffen"
+      },
+      {
+         "key":"scenario_13_description",
+         "value":""
+      },
+      {
+         "key":"page",
+         "value":"Pagina:"
+      },
+      {
+         "key":"of",
+         "value":" van "
+      },
+      {
+         "key":"yourscore",
+         "value":"Je totale score:"
+      },
+      {
+         "key":"doneButton",
+         "value":"Klaar"
+      },
+      {
+         "key":"nextButton",
+         "value":"Volgende"
+      },
+      {
+         "key":"restartButton",
+         "value":"Opnieuw spelen"
+      },
+      {
+         "key":"exitButton",
+         "value":"Verder"
+      },
+      {
+         "key":"color-term",
+         "value":"Kleur van het bord"
+      },
+      {
+         "key":"symbol-term",
+         "value":"Symbool op het bord"
+      },
+      {
+         "key":"class-term",
+         "value":"Klasse nummer op het bord"
+      },
+      {
+         "key":"completed",
+         "value":"verdiend"
+      },
+      {
+         "key":"feedbackShortCorrect",
+         "value":"Goed"
+      },
+      {
+         "key":"feedbackShortIncorrect",
+         "value":"Helaas"
+      },
+      {
+         "key":"resultWithStars",
+         "value":"Gefeliciteerd!"
+      },
+      {
+         "key":"resultNoStars",
+         "value":"Wat vervelend voor je..."
+      },
+      {
+         "key":"unaccomplished",
+         "value":"Niet behaald"
+      },
+      {
+         "key":"accomplished",
+         "value":"Behaald"
+      },
+      {
+         "key":"introduction_short",
+         "value":"Het Boze Borden Spel"
+      },
+      {
+         "key":"introduction_long",
+         "value":"Op straat, op de werkplek en in het warehouse hebben we diverse borden die ons vertellen wat wel of juist niet mag, waarvoor we moeten oppassen en die ons richting geven.\n\nWe hebben: Verbodsborden, gebodsborden, waarschuwingsborden, en borden voor brandbestrijding en veiligheidsvoorziening.\n\nIn dit spel ga je zelf deze borden samenstellen. Er wordt een situatie gegeven en jij mag daarbij het bord de juiste vorm, de juiste kleur en de juiste symbool kleur kiezen.\n\nJe kunt 7 sterren verdienen! Succes!"
+      }
+   ],
+   "levelsCompleted":[
+
+   ]
+}
