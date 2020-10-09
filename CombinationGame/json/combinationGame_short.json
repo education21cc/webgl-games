@@ -1,0 +1,148 @@
+{
+    "userId": 1,
+    "settings": {
+        "muted": false
+    },
+    "content": {
+        "imagesPath": "https://21cceducation.nl/content/games/images/combinationGame/",
+        "maxStarsReward": 3,
+
+        "shapes": [
+          {"id": 1,
+            "name": "square",
+          "filenameBase": "squareBase.png",
+          "filenameBorder": "squareBorder.png",
+          "filenameDiagonalLine": "squareDiagonalLine.png",
+          "filenameShadow": "squareShadow.png"},
+          {"id": 2,
+            "name": "circle",
+          "filenameBase": "circleBase.png",
+          "filenameBorder": "circleBorder.png",
+          "filenameDiagonalLine": "circleDiagonalLine.png",
+          "filenameShadow": "circleShadow.png"},
+          {"id": 3,
+            "name": "triangle",
+          "filenameBase": "triangleBase.png",
+          "filenameBorder": "triangleBorder.png",
+          "filenameDiagonalLine": "triangleDiagonalLine.png",
+          "filenameShadow": "triangleShadow.png"},
+          {"id": 4,
+            "name": "diamond",
+          "filenameBase": "diamondBase.png",
+          "filenameBorder": "diamondBorder.png",
+          "filenameDiagonalLine": "diamondDiagonalLine.png",
+          "filenameShadow": "diamondShadow.png"}
+        ],
+
+        "colors": [
+          {"id": 1,
+            "name": "white",
+          "hexBase": "FFFFFF"},
+          {"id": 2,
+            "name": "blue",
+          "hexBase": "17479d"},
+          {"id": 3,
+            "name": "green",
+          "hexBase": "158d4a"},
+          {"id": 4,
+            "name": "red",
+          "hexBase": "eb2c34"},
+          {"id": 5,
+            "name": "yellow",
+          "hexBase": "ffdb00"},
+          {"id": 6,
+            "name": "white with red border and diagonal line",
+          "hexBase": "FFFFFF",
+          "hexBorder": "eb2c34",
+          "hexDiagonalLine": "eb2c34"},
+          {"id": 7,
+            "name": "yellow with black border",
+          "hexBase": "ffdb00",
+          "hexBorder": "000000",
+          "hexDiagonalLine": ""},
+          {"id": 8,
+            "name": "white with red border",
+          "hexBase": "FFFFFF",
+          "hexBorder": "eb2c34"}
+        ],
+
+        "symbolColors": [
+          {"id": 1,
+          "name": "black",
+          "hex": "000000"},
+          {"id": 2,
+          "name": "white",
+          "hex": "FFFFFF"},
+          {"id": 3,
+          "name": "blue",
+          "hex": "17479d"},
+          {"id": 4,
+          "name": "red",
+          "hex": "eb2c34"}
+        ],
+
+        "scenarios": [
+          {"id": 1,
+          "title": "",
+          "description": "",
+          "symbolFilename": "smoking.png",
+          "combination":
+            {"shape": 2,
+             "color": 6,
+             "symbolColor": 1}
+          }
+        ]
+    },
+
+    "translations": [
+      {"key": "scenario_1_title",
+        "value": "Verbod"},
+      {"key": "scenario_1_description",
+        "value": "Het is hier niet toegestaan om te roken. Hoe ziet dit bord eruit?\n\nKies de vorm van het bord, de kleur van het bord en de kleur van het symbool door op het juiste puntje aan de linker kant te klikken. Je kunt ook van links naar rechts en van boven naar onder swipen."},
+
+      {"key": "page",
+        "value": "Pagina:"},
+      {"key": "of",
+        "value": " van "},
+      {"key": "yourscore",
+        "value": "Je totale score:"},
+      {"key": "doneButton",
+        "value": "Klaar"},
+      {"key": "nextButton",
+        "value": "Volgende"},
+      {"key": "restartButton",
+        "value": "Opnieuw spelen"},
+      {"key": "exitButton",
+        "value": "Verder"},
+      {"key": "shape-term",
+        "value": "Vorm van het bord"},
+      {"key": "color-term",
+        "value": "Kleur van het bord"},
+      {"key": "symbolColor-term",
+        "value": "Kleur van het symbool"},
+
+        {"key": "completed",
+          "value": "verdiend"},
+      {"key": "feedbackShortCorrect",
+        "value": "Goed"},
+      {"key": "feedbackShortIncorrect",
+        "value": "Helaas"},
+      {"key": "resultWithStars",
+        "value": "Gefeliciteerd!"},
+      {"key": "resultNoStars",
+        "value": "Wat vervelend voor je..."},
+      {"key": "unaccomplished",
+        "value": "Niet behaald"},
+      {"key": "accomplished",
+        "value": "Behaald"},
+
+      {"key": "introduction_short",
+        "value": "Het Boze Borden Spel"},
+      {"key": "introduction_long",
+        "value": "Op straat, op de werkplek en in het warehouse hebben we diverse borden die ons vertellen wat wel of juist niet mag, waarvoor we moeten oppassen en die ons richting geven.\n\nWe hebben: Verbodsborden, gebodsborden, waarschuwingsborden, en borden voor brandbestrijding en veiligheidsvoorziening.\n\nIn dit spel ga je zelf deze borden samenstellen. Er wordt een situatie gegeven en jij mag daarbij het bord de juiste vorm, de juiste kleur en de juiste symbool kleur kiezen.\n\nJe kunt 1 ster verdienen! Succes!"}
+      ],
+
+    "levelsCompleted": [
+
+    ]
+}
