@@ -1,235 +1,168 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content= "width=device-width, user-scalable=no">
-    <title>Forklift Labels Game 2019 B </title>
-    <link href="loading.css" rel="stylesheet"/>
-    <script src="Build/UnityLoader.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
 
-    <script>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Forklift Labels Game 2020</title>
+	<style>
+		html,
+		body {
+			background: #000;
+			width: 100%;
+			height: 100%;
+			overflow: visible;
+			padding: 0;
+			margin: 0;
+		}
 
-        function UnityProgress(gameInstance, progress) {
-            const text = "Stay curious";
+		#back {
+			position: fixed;
+			top: 16px;
+			left: 8px;
+			z-index: 2
+		}
 
-            if (!gameInstance.Module)
-            return;
+		div#gameContainer {
+			background: transparent !important;
+			position: absolute;
+		}
 
-            if (!gameInstance.progress) {
-                gameInstance.progress = document.createElement("div");
-                gameInstance.progress.classList.add("loading-background")
-                gameInstance.progress.innerHTML = "<div class='white-block'><div class='outset'></div><div class='blue-block'></div></div><div class='subtext'>" + text + "<span class='dots'><span class='dot1'>.</span><span class='dot2'>.</span><span class='dot3'>.</span></span></div>";
-                document.body.appendChild(gameInstance.progress);
-            }
-            if (progress == 1) {
-                gameInstance.progress.style.display = "none";
-                document.body.removeChild(gameInstance.progress);
-            }
-        }    
+		div#gameContainer canvas {
+			position: absolute;
+			display: none;
+		}
 
+		div#gameContainer canvas[data-pixel-art="true"] {
+			position: absolute;
+			image-rendering: optimizeSpeed;
+			image-rendering: -webkit-crisp-edges;
+			image-rendering: -moz-crisp-edges;
+			image-rendering: -o-crisp-edges;
+			image-rendering: crisp-edges;
+			image-rendering: -webkit-optimize-contrast;
+			image-rendering: optimize-contrast;
+			image-rendering: pixelated;
+			-ms-interpolation-mode: nearest-neighbor;
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+	<link href="loading.css" rel="stylesheet"/>
 
-        function loadGame() {
-            UnityLoader.compatibilityCheck = function (e, t) {t();}; // <== Disable webgl warning!
-            window.unityInstance = UnityLoader.instantiate("unityContainer", "Build/ForkliftLabels.json", {onProgress: UnityProgress, Module: {
-                onRuntimeInitialized: function () {
-                    UnityProgress(window.unityInstance, "complete");
-                    load();
-                },
-            }});
-        }
-        loadGame();
+</head>
 
-        function setGameData(gameData) {
-            send({
-                type: 'setGameData',
-                data: gameData
-            });
-        }
+<body>
+	<div id="back" onClick="back()">
+		<svg xmlns="http://www.w3.org/2000/svg" width="30.04" height="30.04" viewBox="0 0 30.04 30.04"><defs><style>.a{fill:#fff;}.a,.b{stroke:#283583;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75px;}.b{fill:none;}</style></defs><title>Back</title><circle class="a" cx="15.02" cy="15.02" r="14.65"/><path class="b" d="M11.64,16" transform="translate(-0.97 -0.93)"/><path class="b" d="M11.63,16" transform="translate(-0.97 -0.93)"/><path class="b" d="M20.38,22.88" transform="translate(-0.97 -0.93)"/><line class="b" x1="19.39" y1="8.16" x2="10.65" y2="15.02"/><line class="b" x1="19.39" y1="21.98" x2="10.65" y2="15.11"/></svg>
+  </div>
+	<div class="loading-background">
+		<div class='white-block'>
+			<div class='outset'></div>
+			<div class='blue-block'></div>
+		</div>
+		<div class='subtext'>
+				Stay curious
+				<span class='dots'>
+					<span class='dot1'>.</span><span class='dot2'>.</span><span class='dot3'>.</span>
+				</span>
+			</div>
+	</div>
+	<div id="gameContainer">
+		<canvas id="unity-canvas" data-pixel-art=""></canvas>
+		<script src="Build/ForkliftLabels.loader.js"></script>
+		<script>
+			createUnityInstance(document.querySelector("#unity-canvas"), {
+				dataUrl: "Build/ForkliftLabels.data.unityweb",
+				frameworkUrl: "Build/ForkliftLabels.framework.js.unityweb",
+				codeUrl: "Build/ForkliftLabels.wasm.unityweb",
+				streamingAssetsUrl: "StreamingAssets",
+				companyName: "21CC Education",
+				productName: "Forklift Labels Game 2020",
+				productVersion: "1.0",
+			}).then(function (instance) {
+				var canvas = instance.Module.canvas;
+				var container = canvas.parentElement;
+				canvas.style.display = "block";
 
-        function back() {
-            send({
-                type: 'back'
-            });
-        }
+				function onResize() {
+					var w;
+					var h;
 
-        window.exit = function() {
-            send({
-                type: 'exit'
-            });
-        }
-        
-        function send(payload) {
-            if (window.hasOwnProperty("webkit") && window.webkit.hasOwnProperty("messageHandlers")){
-                var stringifiedMessageObj = JSON.stringify(payload);
-                // Send to In App Browser context
-                webkit.messageHandlers.cordova_iab.postMessage(stringifiedMessageObj);
-            }
-            else {
-                parent.postMessage(payload, '*');
-            }
-        }
+					if (scaleToFit) {
+						w = window.innerWidth;
+						h = window.innerHeight;
 
-        window.GAMEDATA = null;
-        window.addEventListener("message", receiveMessage, false);
-        function receiveMessage(msg) {
-            GAMEDATA = msg.data;
-        }
+						var r = 375 / 635;
 
-        function getGameData() {
-            return window.GAMEDATA;
-        }   
+						if (w * r > window.innerHeight) {
+							w = Math.min(w, Math.ceil(h / r));
+						}
+						h = Math.floor(w * r);
+					} else {
+						w = 635;
+						h = 375;
+					}
 
-        function load() {
-            var container = document.querySelector("#unityContainer");
-            var initialWidth = parseInt(container.style.width, 10);
-            var initialHeight = parseInt(container.style.height, 10);
-            container.style.width = 'auto';
-            container.style.height = 'auto';
-            if (initialWidth < initialHeight) {
-                // portrait
-                const canvas = container.querySelector("canvas");
-                const observer = new MutationObserver(function(mutationsList, observer) {
-                    // We wait for height to change on the canvas before setting style.height = '100vh'
-                    for(let mutation of mutationsList) {     
-                        if (mutation.type === 'attributes' && mutation.attributeName == 'height') {
-                            observer.disconnect();
-                            canvas.style.height = '100vh';
-                        }
-                    }
-                });
-                observer.observe(canvas, { attributes: true, childList: false, subtree: true });
-            } else {
-                //  landscape
-                function resize() {
-                    if(window.innerWidth / window.innerHeight > initialWidth / initialHeight) {
-                        // add pillowbox padding to the sides
-                        var delta = (window.innerWidth / window.innerHeight - initialWidth / initialHeight);
-                        container.style.padding = `0 ${(delta * window.innerHeight) /2}px`;
-                    }
-                }
-                resize();
-                window.addEventListener('resize', resize, false);
-                window.addEventListener('orientationchange', resize, false);
-            }
-        }
+					container.style.width = canvas.style.width = w + "px";
+					container.style.height = canvas.style.height = h + "px";
+					container.style.top = Math.floor((window.innerHeight - h) / 2) + "px";
+					container.style.left = Math.floor((window.innerWidth - w) / 2) + "px";
+				}
 
-    </script>
-    <style>
-        html, body { 
-            margin: 0; 
-            padding: 0; 
-            overflow: hidden; 
-            height: 100%; 
-        }
+				var scaleToFit;
+				try {
+					scaleToFit = !!JSON.parse("");
+				} catch (e) {
+					scaleToFit = true;
+				}
+				window.addEventListener('resize', onResize);
+				window.addEventListener('orientationchange', onResize);
 
-        #unityContainer {
-            top: 50%;
-            transform: translateY(-50%); 
-            max-height: 100%;
-            max-width: 100%;
-            margin: auto !important;
-            background: none !important;
-        }
+				onResize();
+			});
 
-        #back {
-            position: fixed;
-            top: 16px;
-            left: 8px;
-            z-index: 2
-        }
+			function setGameData(gameData) {
+				send({
+					type: 'setGameData',
+					data: gameData
+				});
+			}
 
-        .console {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            display: none; /** uncomment to show debug console */
-            flex-direction: column;
-        }
+			function back() {
+				send({
+					type: 'back'
+				});
+			}
 
+			window.exit = function() {
+				send({
+					type: 'exit'
+				});
+			}
+			
+			function send(payload) {
+				if (window.hasOwnProperty("webkit") && window.webkit.hasOwnProperty("messageHandlers")){
+					var stringifiedMessageObj = JSON.stringify(payload);
+					// Send to In App Browser context
+					webkit.messageHandlers.cordova_iab.postMessage(stringifiedMessageObj);
+				}
+				else {
+					parent.postMessage(payload, '*');
+				}
+			}
 
-        .console .header {
-            height: 16px;
-            color: white;
-            background: maroon;
-        }
+			window.GAMEDATA = null;
+			window.addEventListener("message", receiveMessage, false);
+			function receiveMessage(msg) {
+				GAMEDATA = msg.data;
+			}
 
-        .console textarea {
-            flex: 1;
-            display: none;
-        }
+			function getGameData() {
+				return window.GAMEDATA;
+			}   
 
-        .console #reload {
-            display: none;
-        }
+		</script>
+	</div>
+</body>
 
-        .console.open {
-            height: 100%;
-        }
-
-        .console.open #configText {
-            display: block;
-        }
-
-        .console.open #reload {
-            display: block;
-        }
-    </style>
-  </head>
-  
-  <body>
-    <div id="back" onClick="back()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30.04" height="30.04" viewBox="0 0 30.04 30.04"><defs><style>.a{fill:#fff;}.a,.b{stroke:#283583;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75px;}.b{fill:none;}</style></defs><title>Back</title><circle class="a" cx="15.02" cy="15.02" r="14.65"/><path class="b" d="M11.64,16" transform="translate(-0.97 -0.93)"/><path class="b" d="M11.63,16" transform="translate(-0.97 -0.93)"/><path class="b" d="M20.38,22.88" transform="translate(-0.97 -0.93)"/><line class="b" x1="19.39" y1="8.16" x2="10.65" y2="15.02"/><line class="b" x1="19.39" y1="21.98" x2="10.65" y2="15.11"/></svg>
-    </div>
-    <div id="unityContainer" style="width: 635px; height: 375px; margin: auto"></div>
-    <div class="console">
-        <section class="header">
-            game config
-        </section>
-        <textarea id="configText"></textarea>
-        <button id="reload">Reload game!</button>
-    </div>
-    <script>
-
-        var debugEnabled = window.location.search.indexOf("debug") > -1;
-        if (debugEnabled){
-            document.querySelector(".console").style.display = "flex";
-    
-            try {
-                //
-                var asString = document.querySelector("#configText").value;
-                if (asString) {
-                    var object = JSON.parse(asString);
-                    var str = JSON.stringify(object, undefined, 4);
-                    document.querySelector("#configText").value = str;
-                    window.GAMEDATA = object;
-                    loadGame();
-                }
-            } catch(e){
-                console.warn("Error trying to read JSON\n", asString);
-            }
-    
-            document.querySelector(".console .header").addEventListener("click", function() {
-                document.querySelector(".console").classList.toggle("open");
-            });
-            document.querySelector("#reload").addEventListener("click", function() {
-                var asString = document.querySelector("#configText").value;
-                try {
-                    var obj = JSON.parse(asString);
-                    if (obj && typeof obj === "object") {
-                        window.GAMEDATA = obj;
-                        document.querySelector(".console").classList.remove("open");
-                        loadGame();
-                    }
-                }
-                catch (e) { 
-                    alert("Could not parse gamedata config! It's not valid json.")
-                }
-            });
-        }
-    </script>
-  </body>
-  
 </html>
-
