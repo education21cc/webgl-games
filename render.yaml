@@ -31,3 +31,6 @@ services:
   - path: /**/*js.unityweb
     name: Content-Encoding
     value: br
+  - path: /**/json/*.json
+    name: Access-Control-Allow-Origin
+    value: *
