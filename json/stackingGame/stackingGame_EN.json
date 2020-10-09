@@ -9,11 +9,11 @@
         {"id": 1,
          "duration": 300,
          "weight": false,
-         "boxes": 18},
+         "boxes": 21},
          {"id": 2,
           "duration": 300,
           "weight": true,
-          "boxes": 18}
+          "boxes": 21}
       ]
     },
 
@@ -68,6 +68,8 @@
   "value": "Make sure lighter boxes are on top."},
 {"key": "angleissue",
   "value": "This box has a bad angle. Keep boxes straight."},
+  {"key": "nobrickwise",
+    "value": "You did not stack according to brickwise manner!"},
 
 {"key": "level1_stars1",
   "value": "Make sure to stack in a brick-wise manner!"},
