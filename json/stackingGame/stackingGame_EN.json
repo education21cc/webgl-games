@@ -9,11 +9,11 @@
         {"id": 1,
          "duration": 300,
          "weight": false,
-         "boxes": 21},
+         "boxes": 18},
          {"id": 2,
           "duration": 300,
           "weight": true,
-          "boxes": 21}
+          "boxes": 18}
       ]
     },
 
