@@ -1,0 +1,175 @@
+{
+    "userId": 1,
+    "settings": {
+        "muted": false
+    },
+    "content": {
+        "imagesPath": "https://21cceducation.nl/content/games/images/image.php/?image=multipleChoiceGame/",
+        "audioPath": "https://21cceducation.nl/content/games/images/wav.php/?sound=multipleChoiceGame/",
+        "maxStarsReward": 1,
+        "randomizeQuestions": true,
+        "skipOpeningScreen": false,
+        "questions": [
+          {"answersAmount": 5,
+           "correctAnswer": [1],
+           "multipleAnswersPossible": false,
+           "text": true,
+
+           "textSmall": true,
+
+           "answersBigText": false,
+           "answersImages": true,
+           "answersImageUrls": ["brandweersirene.png", "deurbel.png", "brandalarm.png", "luchtalarm.png", "ontruimingsalarm.png"],
+           "soundUrl": "brandweersirene.wav"},
+           {"answersAmount": 5,
+            "correctAnswer": [2],
+            "multipleAnswersPossible": false,
+            "text": true,
+
+            "textSmall": true,
+
+            "answersBigText": false,
+            "answersImages": true,
+            "answersImageUrls": ["brandweersirene.png", "deurbel.png", "brandalarm.png", "luchtalarm.png", "ontruimingsalarm.png"],
+            "soundUrl": "deurbel.wav"},
+            {"answersAmount": 5,
+             "correctAnswer": [3],
+             "multipleAnswersPossible": false,
+             "text": true,
+
+             "textSmall": true,
+
+             "answersBigText": false,
+             "answersImages": true,
+             "answersImageUrls": ["brandweersirene.png", "deurbel.png", "brandalarm.png", "luchtalarm.png", "ontruimingsalarm.png"],
+             "soundUrl": "brandalarm.wav"},
+             {"answersAmount": 5,
+              "correctAnswer": [4],
+              "multipleAnswersPossible": false,
+              "text": true,
+
+              "textSmall": true,
+
+              "answersBigText": false,
+              "answersImages": true,
+              "answersImageUrls": ["brandweersirene.png", "deurbel.png", "brandalarm.png", "luchtalarm.png", "ontruimingsalarm.png"],
+              "soundUrl": "luchtalarm.wav"},
+              {"answersAmount": 5,
+               "correctAnswer": [5],
+               "multipleAnswersPossible": false,
+               "text": true,
+
+               "textSmall": true,
+
+               "answersBigText": false,
+               "answersImages": true,
+               "answersImageUrls": ["brandweersirene.png", "deurbel.png", "brandalarm.png", "luchtalarm.png", "ontruimingsalarm.png"],
+               "soundUrl": "ontruimingsalarm.wav"}
+        ]
+    },
+    "translations": [
+      {"key": "question_1_question",
+        "value": "Raad dit geluid."},
+
+      {"key": "question_1_answer_1",
+        "value": "Brandweersirene"},
+      {"key": "question_1_answer_2",
+        "value": "Deurbel"},
+      {"key": "question_1_answer_3",
+        "value": "Brandalarm"},
+      {"key": "question_1_answer_4",
+        "value": "Luchtalarm"},
+      {"key": "question_1_answer_5",
+        "value": "Ontruimingsalarm"},
+
+        {"key": "question_2_question",
+          "value": "Raad dit geluid."},
+
+        {"key": "question_2_answer_1",
+          "value": "Brandweersirene"},
+        {"key": "question_2_answer_2",
+          "value": "Deurbel"},
+        {"key": "question_2_answer_3",
+          "value": "Brandalarm"},
+        {"key": "question_2_answer_4",
+          "value": "Luchtalarm"},
+        {"key": "question_2_answer_5",
+          "value": "Ontruimingsalarm"},
+
+          {"key": "question_3_question",
+            "value": "Raad dit geluid."},
+
+          {"key": "question_3_answer_1",
+            "value": "Brandweersirene"},
+          {"key": "question_3_answer_2",
+            "value": "Deurbel"},
+          {"key": "question_3_answer_3",
+            "value": "Brandalarm"},
+          {"key": "question_3_answer_4",
+            "value": "Luchtalarm"},
+          {"key": "question_3_answer_5",
+            "value": "Ontruimingsalarm"},
+
+            {"key": "question_4_question",
+              "value": "Raad dit geluid."},
+
+            {"key": "question_4_answer_1",
+              "value": "Brandweersirene"},
+            {"key": "question_4_answer_2",
+              "value": "Deurbel"},
+            {"key": "question_4_answer_3",
+              "value": "Brandalarm"},
+            {"key": "question_4_answer_4",
+              "value": "Luchtalarm"},
+            {"key": "question_4_answer_5",
+              "value": "Ontruimingsalarm"},
+
+              {"key": "question_5_question",
+                "value": "Raad dit geluid."},
+
+              {"key": "question_5_answer_1",
+                "value": "Brandweersirene"},
+              {"key": "question_5_answer_2",
+                "value": "Deurbel"},
+              {"key": "question_5_answer_3",
+                "value": "Brandalarm"},
+              {"key": "question_5_answer_4",
+                "value": "Luchtalarm"},
+              {"key": "question_5_answer_5",
+                "value": "Ontruimingsalarm"},
+
+      {"key": "page",
+        "value": "Pagina:"},
+      {"key": "of",
+        "value": " van "},
+      {"key": "yourscore",
+        "value": "Je score:"},
+      {"key": "doneButton",
+        "value": "Klaar"},
+      {"key": "nextButton",
+        "value": "Volgende"},
+
+        {"key": "completed",
+          "value": "verdiend"},
+        {"key": "feedbackShortCorrect",
+          "value": "Goed"},
+        {"key": "feedbackShortIncorrect",
+          "value": "Helaas"},
+        {"key": "resultWithStars",
+          "value": "Gefeliciteerd!"},
+        {"key": "resultNoStars",
+          "value": "Wat vervelend voor je..."},
+        {"key": "unaccomplished",
+          "value": "Niet behaald"},
+        {"key": "accomplished",
+          "value": "Behaald"},
+
+      {"key": "introduction_short",
+        "value": "Raad het geluid!!"},
+      {"key": "introduction_long",
+        "value": "Belangrijke alarmeringsgeluiden moet je snel kunnen herkennen om te weten wat je moet doen als je deze hoort. Herken de volgende 5 geluiden en win 5 sterren."}
+      ],
+    "levelsCompleted": [
+
+    ]
+}

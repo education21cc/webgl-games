@@ -1,0 +1,67 @@
+{
+
+    "content": {
+        "imagesPath": "https://21cceducation.nl/content/games/images/multipleChoiceGame/",
+        "maxStarsReward": 1,
+        "randomizeQuestions": false,
+        "skipOpeningScreen": true,
+        "questions": [
+          {"answersAmount": 3,
+           "correctAnswer": [2],
+           "multipleAnswersPossible": false,
+           "answersHaveFeedbackText": true,
+           "text": false,
+           "answersBigText": false,
+           "answersImages": true,
+           "answersImageUrls": ["bord1.png", "bord2.png", "bord3.png"],
+           "imageUrl": "",
+           "soundUrl": ""}
+        ]
+    },
+    "translations": [
+      {"key": "question_1_question",
+        "value": "Welk bord staat boven de nooduitgang?"},
+
+      {"key": "question_1_answer_1_feedback",
+        "value": "Dit bord geeft aan: brandbestrijding-weg naar brandbestrijdings- materiaal"},
+      {"key": "question_1_answer_2_feedback",
+        "value": "Dit bord is: vluchtroute aanduiding"},
+      {"key": "question_1_answer_3_feedback",
+        "value": "Dit bord geeft aan: te volgen richting"},
+
+      {"key": "page",
+        "value": "Pagina:"},
+      {"key": "of",
+        "value": " van "},
+      {"key": "yourscore",
+        "value": "Je score:"},
+      {"key": "doneButton",
+        "value": "Klaar"},
+      {"key": "nextButton",
+        "value": "Volgende"},
+
+        {"key": "completed",
+          "value": "verdiend"},
+        {"key": "feedbackShortCorrect",
+          "value": "Goed"},
+        {"key": "feedbackShortIncorrect",
+          "value": "Helaas"},
+        {"key": "resultWithStars",
+          "value": "Gefeliciteerd!"},
+        {"key": "resultNoStars",
+          "value": "Wat vervelend voor je..."},
+        {"key": "unaccomplished",
+          "value": "Niet behaald"},
+        {"key": "accomplished",
+          "value": "Behaald"},
+
+      {"key": "introduction_short",
+        "value": "Welke fase?"},
+      {"key": "introduction_long",
+        "value": "Een noodsituatie kan in korte tijd ontstaan, zeker als niet op de juiste manier wordt gehandeld. We herkennen 3 fasen bij een noodsituatie: \n\nFase 1: De eerste melding van een noodsituatie \nFase 2: Handelingen en maatregelen van een noodsituatie \nFase 3: Beëindiging van een noodsituatie. \n\nHierna worden verschillende handelingen kort omschreven. Kun jij herkennen in welke van deze 3 fasen je dan zit? Je kunt 12 sterren verdienen."}
+      ],
+    "levelsCompleted": [
+
+    ]
+
+}

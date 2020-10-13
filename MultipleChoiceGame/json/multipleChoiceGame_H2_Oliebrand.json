@@ -1,0 +1,77 @@
+{
+    "userId": 1,
+    "settings": {
+        "muted": false
+    },
+    "content": {
+        "imagesPath": "https://21cceducation.nl/content/games/images/multipleChoiceGame/",
+        "maxStarsReward": 1,
+        "randomizeQuestions": false,
+        "skipOpeningScreen": true,
+        "questions": [
+          {"answersAmount": 3,
+           "correctAnswer": [1],
+           "multipleAnswersPossible": false,
+           "text": false,
+           "answersBigText": false,
+           "answersImages": true,
+           "answersImageUrls": [],
+           "imageUrl": "",
+           "soundUrl": "",
+           "feedbackLinkUrl": "https://www.youtube.com/watch?v=95qTNESPzQI"}
+        ]
+    },
+    "translations": [
+      {"key": "question_1_question",
+        "value": "Waar mag je een oliebrand NOOIT mee proberen te blussen?"},
+
+      {"key": "question_1_answer_1",
+        "value": "Water"},
+      {"key": "question_1_answer_2",
+        "value": "Deken"},
+      {"key": "question_1_answer_3",
+        "value": "Zand"},
+
+      {"key": "question_1_feedbackCorrect",
+        "value": "Water verergert de brand. Doordat het water bij contact met de hete olie onmiddellijk gaat koken ontstaat in de olie een stoomwolk die een zeer grote steekvlam veroorzaakt:"},
+      {"key": "question_1_feedbackIncorrect",
+        "value": "Water verergert de brand. Doordat het water bij contact met de hete olie onmiddellijk gaat koken ontstaat in de olie een stoomwolk die een zeer grote steekvlam veroorzaakt:"},
+
+      {"key": "question_1_urlButtonText",
+        "value": "Bekijk de video op YouTube"},
+
+      {"key": "page",
+        "value": "Pagina:"},
+      {"key": "of",
+        "value": " van "},
+      {"key": "yourscore",
+        "value": "Je score:"},
+      {"key": "doneButton",
+        "value": "Klaar"},
+      {"key": "nextButton",
+        "value": "Volgende"},
+
+        {"key": "completed",
+          "value": "verdiend"},
+        {"key": "feedbackShortCorrect",
+          "value": "Goed"},
+        {"key": "feedbackShortIncorrect",
+          "value": "Helaas"},
+        {"key": "resultWithStars",
+          "value": "Gefeliciteerd!"},
+        {"key": "resultNoStars",
+          "value": "Wat vervelend voor je..."},
+        {"key": "unaccomplished",
+          "value": "Niet behaald"},
+        {"key": "accomplished",
+          "value": "Behaald"},
+
+      {"key": "introduction_short",
+        "value": ""},
+      {"key": "introduction_long",
+        "value": ""}
+      ],
+    "levelsCompleted": [
+
+    ]
+}
