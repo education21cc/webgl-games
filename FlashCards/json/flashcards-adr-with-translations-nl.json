@@ -1,6 +1,4 @@
 {
-  "url":"https://education21cc-webgl-games.onrender.com/FlashCards/index.html",
-  "data":{
     "userId":2,
     "settings":{
       "muted": false    
@@ -178,5 +176,4 @@
       "value": "Bijv: benzine"
     }
   ]
-  }
 }
