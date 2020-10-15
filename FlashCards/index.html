@@ -71,6 +71,7 @@
 		<canvas id="unity-canvas" data-pixel-art=""></canvas>
 		<script src="Build/FlashCards.loader.js"></script>
 		<script>
+			var unityInstance;
 			createUnityInstance(document.querySelector("#unity-canvas"), {
 				dataUrl: "Build/FlashCards.data.br",
 				frameworkUrl: "Build/FlashCards.framework.js.br",
@@ -80,6 +81,7 @@
 				productName: "FlashCards",
 				productVersion: "0.8",
 			}).then(function (instance) {
+				unityInstance = instance;
 				var canvas = instance.Module.canvas;
 				var container = canvas.parentElement;
 				canvas.style.display = "block";
@@ -129,8 +131,11 @@
 			}
 
 			function back() {
-				send({
-					type: 'back'
+				console.log(unityInstance);
+				unityInstance.Quit(function() {
+					send({
+						type: 'back'
+					});
 				});
 			}
 
