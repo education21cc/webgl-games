@@ -1,6 +1,4 @@
 {
-  "url":"https://education21cc-webgl-games.onrender.com/ConveyorGame/index.html",
-  "data":{
     "userId":7,
     "settings":{
       "muted":false
@@ -74,5 +72,4 @@
         "maxScore":2
       }
     ]
-  }
 }
