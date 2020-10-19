@@ -131,22 +131,19 @@
 			}
 
 			function back() {
-				const callback = function() {
+				unityInstance.Quit().then(function() {
 					console.log("i quit")
 					send({
 						type: 'back'
 					});
-				};
-				// the callback is not working from unityInstance.Quit: 
-				// https://forum.unity.com/threads/quit-and-memory-cleanup.571210/
-				setTimeout(callback, 250);
-
-				unityInstance.Quit();
+				});
 			}
 
 			window.exit = function() {
-				send({
-					type: 'exit'
+				unityInstance.Quit().then(function() {
+					send({
+						type: 'exit'
+					});
 				});
 			}
 			
