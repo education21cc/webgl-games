@@ -22,15 +22,15 @@ services:
   - path: /**/*.wasm
     name: Content-Type
     value: application/wasm
-  - path: /**/*data.unityweb
-    name: Content-Encoding
-    value: br
-  - path: /**/*wasm.unityweb
-    name: Content-Encoding
-    value: br
-  - path: /**/*js.unityweb
-    name: Content-Encoding
-    value: br
+  # - path: /**/*data.unityweb
+  #   name: Content-Encoding
+  #   value: br
+  # - path: /**/*wasm.unityweb
+  #   name: Content-Encoding
+  #   value: br
+  # - path: /**/*js.unityweb
+  #   name: Content-Encoding
+  #   value: br
   - path: /**/*js.gz
     name: Content-Encoding
     value: gzip
