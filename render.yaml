@@ -31,6 +31,15 @@ services:
   - path: /**/*js.unityweb
     name: Content-Encoding
     value: br
+  - path: /**/*js.gz
+    name: Content-Encoding
+    value: gzip
+  - path: /**/*data.gz
+    name: Content-Encoding
+    value: gzip
+  - path: /**/*wasm.gz
+    name: Content-Encoding
+    value: gzip
   - path: /**/json/*.json
     name: Access-Control-Allow-Origin
     value: "*"
