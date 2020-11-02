@@ -27,15 +27,15 @@ services:
   - path: /brotli/**/*.wasm.br
     name: Content-Type
     value: application/wasm
-  - path: /brotli/**/*data.unityweb
-    name: Content-Encoding
-    value: br
-  - path: /brotli/**/*wasm.unityweb
-    name: Content-Encoding
-    value: br
-  - path: /brotli/**/*js.unityweb
-    name: Content-Encoding
-    value: br
+  # - path: /brotli/**/*data.unityweb
+  #   name: Content-Encoding
+  #   value: br
+  # - path: /brotli/**/*wasm.unityweb
+  #   name: Content-Encoding
+  #   value: br
+  # - path: /brotli/**/*js.unityweb
+  #   name: Content-Encoding
+  #   value: br
 # gzip  
   - path: /gzip/**/*js.gz
     name: Content-Encoding
