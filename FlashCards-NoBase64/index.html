@@ -69,13 +69,13 @@
 	</div>
 	<div id="gameContainer">
 		<canvas id="unity-canvas" data-pixel-art=""></canvas>
-		<script src="Build/FlashCards.loader.js"></script>
+		<script src="Build/FlashCards-NoBase64.loader.js"></script>
 		<script>
 			var unityInstance;
 			createUnityInstance(document.querySelector("#unity-canvas"), {
-				dataUrl: "Build/FlashCards.data.unityweb",
-				frameworkUrl: "Build/FlashCards.framework.js.unityweb",
-				codeUrl: "Build/FlashCards.wasm.unityweb",
+				dataUrl: "Build/FlashCards-NoBase64.data.unityweb",
+				frameworkUrl: "Build/FlashCards-NoBase64.framework.js.unityweb",
+				codeUrl: "Build/FlashCards-NoBase64.wasm.unityweb",
 				streamingAssetsUrl: "StreamingAssets",
 				companyName: "Education21CC",
 				productName: "FlashCards",
