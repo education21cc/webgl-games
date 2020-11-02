@@ -4,33 +4,49 @@ services:
   env: static
   staticPublishPath: ./
   headers:
-  - path: /**/*.br
-    name: Content-Encoding
-    value: br
-  - path: /**/*.js.br
-    name: Content-Encoding
-    value: br
-  - path: /**/*.js.br
-    name: Content-Type
-    value: text/javascript
-  - path: /**/*.wasm.br
-    name: Content-Encoding
-    value: br
-  - path: /**/*.wasm.br
-    name: Content-Type
-    value: application/wasm
+# CORS header for JSONS    
+  - path: /**/json/*.json
+    name: Access-Control-Allow-Origin
+    value: "*"
   - path: /**/*.wasm
     name: Content-Type
     value: application/wasm
-  # - path: /**/*data.unityweb
-  #   name: Content-Encoding
-  #   value: br
-  # - path: /**/*wasm.unityweb
-  #   name: Content-Encoding
-  #   value: br
-  # - path: /**/*js.unityweb
-  #   name: Content-Encoding
-  #   value: br
+# Broti
+  - path: /brotli/**/*.br
+    name: Content-Encoding
+    value: br
+  - path: /brotli/**/*.js.br
+    name: Content-Encoding
+    value: br
+  - path: /brotli/**/*.js.br
+    name: Content-Type
+    value: text/javascript
+  - path: /brotli/**/*.wasm.br
+    name: Content-Encoding
+    value: br
+  - path: /brotli/**/*.wasm.br
+    name: Content-Type
+    value: application/wasm
+  - path: /brotli/**/*data.unityweb
+    name: Content-Encoding
+    value: br
+  - path: /brotli/**/*wasm.unityweb
+    name: Content-Encoding
+    value: br
+  - path: /brotli/**/*js.unityweb
+    name: Content-Encoding
+    value: br
+# gzip  
+  - path: /gzip/**/*js.gz
+    name: Content-Encoding
+    value: gzip
+  - path: /gzip/**/*data.gz
+    name: Content-Encoding
+    value: gzip
+  - path: /gzip/**/*wasm.gz
+    name: Content-Encoding
+    value: gzip
+# default: gzip, todo: remove this
   - path: /**/*js.gz
     name: Content-Encoding
     value: gzip
