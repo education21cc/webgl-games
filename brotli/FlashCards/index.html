@@ -48,7 +48,33 @@
 	</style>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
 	<link href="loading.css" rel="stylesheet"/>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
 
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+			https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-performance.js"></script>
+
+	<script>
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		var firebaseConfig = {
+			apiKey: "AIzaSyBWKGWUKxa-gU97o3awFAQfqno7ga6vXSw",
+			authDomain: "education21cc-player-gecko.firebaseapp.com",
+			databaseURL: "https://education21cc-player-gecko.firebaseio.com",
+			projectId: "education21cc-player-gecko",
+			storageBucket: "education21cc-player-gecko.appspot.com",
+			messagingSenderId: "850039953371",
+			appId: "1:850039953371:web:1f37a16c52b434e88c79fe",
+			measurementId: "G-MGNY7YCGB6"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+		var perf = firebase.performance();
+
+	</script>
 </head>
 
 <body>
@@ -72,6 +98,12 @@
 		<script src="Build/FlashCards.loader.js"></script>
 		<script>
 			var unityInstance;
+			performance.mark('startCreateUnityInstance');
+			var perf = firebase.performance();
+
+			const trace = perf.trace('startCreateUnityInstanceTrace');
+			trace.start();
+
 			createUnityInstance(document.querySelector("#unity-canvas"), {
 				dataUrl: "Build/FlashCards.data.unityweb",
 				frameworkUrl: "Build/FlashCards.framework.js.unityweb",
@@ -81,6 +113,9 @@
 				productName: "FlashCards",
 				productVersion: "0.8",
 			}).then(function (instance) {
+				performance.mark('doneCreateUnityInstance');
+				trace.stop();
+
 				unityInstance = instance;
 				var canvas = instance.Module.canvas;
 				var container = canvas.parentElement;
@@ -132,7 +167,6 @@
 
 			function back() {
 				unityInstance.Quit().then(function() {
-					console.log("i quit")
 					send({
 						type: 'back'
 					});
