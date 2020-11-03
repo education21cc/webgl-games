@@ -72,8 +72,6 @@
 		// Initialize Firebase
 		firebase.initializeApp(firebaseConfig);
 		firebase.analytics();
-		var perf = firebase.performance();
-
 	</script>
 </head>
 
@@ -101,7 +99,7 @@
 			performance.mark('startCreateUnityInstance');
 			var perf = firebase.performance();
 
-			const trace = perf.trace('startCreateUnityInstanceTrace');
+			const trace = perf.trace('createUnityInstanceTrace');
 			trace.start();
 
 			createUnityInstance(document.querySelector("#unity-canvas"), {
@@ -174,7 +172,10 @@
 			}
 
 			window.exit = function() {
+				const trace = perf.trace('stopUnityInstanceTrace');
+				trace.start();
 				unityInstance.Quit().then(function() {
+					trace.stop();
 					send({
 						type: 'exit'
 					});
