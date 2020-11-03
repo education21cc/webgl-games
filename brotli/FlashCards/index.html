@@ -100,6 +100,7 @@
 			var perf = firebase.performance();
 
 			const trace = perf.trace('createUnityInstanceTrace');
+			trace.putAttribute('game', "FlashCards");
 			trace.start();
 
 			createUnityInstance(document.querySelector("#unity-canvas"), {
