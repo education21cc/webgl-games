@@ -46,6 +46,15 @@ services:
   - path: /gzip/**/*wasm.gz
     name: Content-Encoding
     value: gzip
+  - path: /gzip/**/*data.unityweb
+    name: Content-Encoding
+    value: gzip
+  - path: /gzip/**/*wasm.unityweb
+    name: Content-Encoding
+    value: gzip
+  - path: /gzip/**/*js.unityweb
+    name: Content-Encoding
+    value: gzip
 # default: gzip, todo: remove this
   - path: /**/*js.gz
     name: Content-Encoding
@@ -56,6 +65,13 @@ services:
   - path: /**/*wasm.gz
     name: Content-Encoding
     value: gzip
-  - path: /**/json/*.json
-    name: Access-Control-Allow-Origin
-    value: "*"
+  - path: /**/*data.unityweb
+    name: Content-Encoding
+    value: gzip
+  - path: /**/*wasm.unityweb
+    name: Content-Encoding
+    value: gzip
+  - path: /**/*js.unityweb
+    name: Content-Encoding
+    value: gzip
+
