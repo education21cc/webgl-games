@@ -101,6 +101,7 @@
 
 			const trace = perf.trace('createUnityInstanceTrace');
 			trace.putAttribute('game', "VCA Game Collection 1");
+			trace.putAttribute('path', location.pathname.lastIndexOf('/index') == -1 ? location.pathname : location.pathname.substring(0, location.pathname.lastIndexOf('/index')));
 			trace.start();
 
 			createUnityInstance(document.querySelector("#unity-canvas"), {
