@@ -93,7 +93,7 @@
 	</div>
 	<div id="gameContainer">
 		<canvas id="unity-canvas" data-pixel-art=""></canvas>
-		<script src="Build/WebGL.loader.js"></script>
+		<script src="Build/ForkliftLabels.loader.js"></script>
 		<script>
 			var unityInstance;
 			performance.mark('startCreateUnityInstance');
@@ -104,9 +104,9 @@
 			trace.start();
 
 			createUnityInstance(document.querySelector("#unity-canvas"), {
-				dataUrl: "Build/WebGL.data.unityweb",
-				frameworkUrl: "Build/WebGL.framework.js.unityweb",
-				codeUrl: "Build/WebGL.wasm.unityweb",
+				dataUrl: "Build/ForkliftLabels.data.unityweb",
+				frameworkUrl: "Build/ForkliftLabels.framework.js.unityweb",
+				codeUrl: "Build/ForkliftLabels.wasm.unityweb",
 				streamingAssetsUrl: "StreamingAssets",
 				companyName: "21CC Education",
 				productName: "Forklift Labels Game 2020",
