@@ -1,0 +1,26 @@
+{
+    "userId": 1,
+    "settings": {
+        "muted": false
+    },
+
+    "content": {
+      "rounds": [
+        {"id": 1,
+         "duration": 300,
+         "weight": false,
+         "boxes": 21},
+         {"id": 2,
+          "duration": 300,
+          "weight": true,
+          "boxes": 21}
+      ]
+    },
+
+    "translations": [ {"key": "side", "value": "Zijkant"}, {"key": "front", "value": "Voorkant"}, {"key": "send", "value": "Verstuur"}, {"key": "checking", "value": "Checken"}, {"key": "ok", "value": "OK"}, {"key": "home", "value": "Main menu"}, {"key": "levelselection", "value": "Level selectie"}, {"key": "restart", "value": "Restart"}, {"key": "selectalevel", "value": "Kies een level"}, {"key": "settings", "value": "Instellingen"}, {"key": "feedback", "value": "Heb je opmerkingen? Laat het ons weten!"}, {"key": "high", "value": "Hoog"}, {"key": "low", "value": "Laag"}, {"key": "graphicsquality", "value": "Beeldkwaliteit"}, {"key": "tip1", "value": "Boxen moeten opgestapeld worden op een baksteenwijze, met de correcte kant omhoog.\n\nDraai dozen om naar de voorkant om de gaten aan de zijkanten van je stapel te vullen. Je hebt een beperkte tijd om de klus klaar te krijgen."}, {"key": "tip2", "value": "Zware dozen moeten aan de onderkant en lichte dozen aan de bovenkant.\n\nZorg ervoor dat een zwaardere doos nooit op een lichtere doos staat. Je hebt een beperkte tijd om de klus klaar te krijgen."}, {"key": "", "value": ""}, {"key": "", "value": ""}, {"key": "", "value": ""}, {"key": "issue", "value": "Je hebt hier een probleem!"}, {"key": "missingbox", "value": "Je moet hier een doos plaatsen."}, {"key": "labelissue", "value": "Deze doos heeft niet het label omhoog."}, {"key": "weightissue", "value": "Alleen lichtere dozen mogen erop staan."}, {"key": "angleissue", "value": "Deze doos staat raar, zet hem recht."}, {"key": "nobrickwise", "value": "Je hebt hier niet volgens baksteenwijze opgestapeld!"}, {"key": "level1_stars1", "value": "Zorg ervoor dat je opstapeld via baksteenwijze!"}, {"key": "level1_stars2", "value": "Vergeet niet alle labels omhoog te draaien!"}, {"key": "level1_stars3", "value": "Geweldig, jij bent de super stapeler!"}, {"key": "level1_stars0", "value": "Niet een geweldige start... Probeer het nog eens en kijk naar het voorbeeld aan het begin!"}, {"key": "level2_stars1", "value": "De zwaarste dozen moeten onderaan."}, {"key": "level2_stars2", "value": "Vergeet niet baksteensgewijs op te stapelen en de labels omhoog te draaien."}, {"key": "level2_stars3", "value": "Geweldig, jij bent de super stapeler!"}, {"key": "level2_stars0", "value": "Niet een geweldige start... Probeer het nog eens en kijk naar het voorbeeld aan het begin!"}
+
+      ],
+    "levelsCompleted": [
+
+    ]
+}
