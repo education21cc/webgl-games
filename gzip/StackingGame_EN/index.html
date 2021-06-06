@@ -3,8 +3,9 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>21CC Player</title>
+	<title>Stacking Game</title>
 	<style>
 		html,
 		body {
@@ -21,6 +22,12 @@
 			top: 16px;
 			left: 8px;
 			z-index: 2
+		}
+
+		@media (orientation: portrait) {
+			#back {
+				top: 32px;
+			}
 		}
 
 		div#gameContainer {
@@ -100,7 +107,7 @@
 			var perf = firebase.performance();
 
 			const trace = perf.trace('createUnityInstanceTrace');
-			trace.putAttribute('game', "21CC Player");
+			trace.putAttribute('game', "Stacking Game");
 			trace.putAttribute('path', location.pathname.lastIndexOf('/index') == -1 ? location.pathname : location.pathname.substring(0, location.pathname.lastIndexOf('/index')));
 			trace.start();
 
@@ -109,9 +116,9 @@
 				frameworkUrl: "Build/StackingGame_EN.framework.js.unityweb",
 				codeUrl: "Build/StackingGame_EN.wasm.unityweb",
 				streamingAssetsUrl: "StreamingAssets",
-				companyName: "21CC B.V.",
-				productName: "21CC Player",
-				productVersion: "1.040",
+				companyName: "21CC Education",
+				productName: "Stacking Game",
+				productVersion: "1.0",
 			}).then(function (instance) {
 				performance.mark('doneCreateUnityInstance');
 				trace.stop();
