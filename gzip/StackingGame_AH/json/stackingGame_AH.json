@@ -1,0 +1,97 @@
+{
+    "userId": 1,
+    "settings": {
+        "muted": false
+    },
+
+    "content": {
+      "rounds": [
+        {"id": 1,
+         "duration": 300,
+         "weight": false,
+         "boxes": 21},
+         {"id": 2,
+          "duration": 300,
+          "weight": true,
+          "boxes": 21}
+      ]
+    },
+
+    "translations": [
+      {"key": "side",
+  "value": "Side"},
+{"key": "front",
+  "value": "Front"},
+{"key": "send",
+  "value": "Send"},
+{"key": "checking",
+  "value": "Checking"},
+{"key": "ok",
+  "value": "OK"},
+{"key": "home",
+  "value": "Home"},
+{"key": "levelselection",
+  "value": "Level selection"},
+{"key": "restart",
+  "value": "Restart"},
+{"key": "selectalevel",
+  "value": "Select a level"},
+{"key": "settings",
+  "value": "Settings"},
+{"key": "feedback",
+  "value": "Do you have comments? Let us know!"},
+{"key": "high",
+  "value": "High"},
+{"key": "low",
+  "value": "Low"},
+{"key": "graphicsquality",
+  "value": "Graphics quality"},
+
+{"key": "tip1",
+  "value": "Boxes should be stacked in this brick-wise manner, with the correct side up.\n\nFlip boxes to the front side to fill the gaps at the side of your stack. You have 2 minutes to complete the task."},
+{"key": "tip2",
+  "value": "Heavy boxes should be at the bottom, lighter boxes at the top.\n\nMake sure a heavier box is never placed on top of a lighter box. You have 3 minutes to complete the task."},
+{"key": "",
+  "value": ""},
+{"key": "",
+  "value": ""},
+{"key": "",
+  "value": ""},
+
+{"key": "issue",
+  "value": "You have an issue here!"},
+{"key": "missingbox",
+  "value": "You should place a box here."},
+{"key": "labelissue",
+  "value": "This box does not have the label up."},
+{"key": "weightissue",
+  "value": "Make sure lighter boxes are on top."},
+{"key": "angleissue",
+  "value": "This box has a bad angle. Keep boxes straight."},
+  {"key": "nobrickwise",
+    "value": "You did not stack according to brickwise manner!"},
+
+{"key": "level1_stars1",
+  "value": "Make sure to stack in a brick-wise manner!"},
+{"key": "level1_stars2",
+  "value": "Don't forget to turn all the direction labels up!"},
+{"key": "level1_stars3",
+  "value": "Great job, you're a great packer!"},
+{"key": "level1_stars0",
+  "value": "Not a great start... Please examine the perfectly packed palette at the beginning of the round!"},
+
+
+{"key": "level2_stars1",
+  "value": "The heaviest boxes need to be at the bottom."},
+{"key": "level2_stars2",
+  "value": "Don't forget to stack brick-wise and pay attention to direction labels!"},
+{"key": "level2_stars3",
+  "value": "Great job, you're a great packer!"},
+{"key": "level2_stars0",
+  "value": "Not a great start... Make sure that the heaviest boxes are stacked at the bottom!"}
+
+      ],
+    "levelsCompleted": [
+
+    ]
+}
