@@ -119,47 +119,47 @@
       }
     ]
   },
-  "translations":[
-      {
-        "key":"intro",
-        "value":"Products will pass on the conveyor belt. Grab them from the belt and find the bar code to scan. Find the best storage location in the warehouse to store goods:  \n\n Regular storage\n Dangerous Goods storage\n Safe storage\n Cold storage"
-      },
-      {
-        "key":"intro-button",
-        "value":"Let's go!"
-      },
-      {
-        "key":"start-game",
-        "value":"Get ready!"
-      },
-      {
-        "key":"dropping-boxes",
-        "value":"Grab a box from the belt"
-      },
-      {
-        "key":"find-barcode",
-        "value":"Find the barcode"
-      },
-      {
-        "key":"store-box",
-        "value":"Bring the box to the correct storage location"
-      },
-      {
-        "key":"box-stored-successful",
-        "value":"Very good"
-      },
-      {
-        "key":"box-stored-wrong",
-        "value":"Wrong location for this product"
-      },
-      {
-        "key":"game-over",
-        "value":"Game over :("
-      },
-      {
-        "key":"win",
-        "value":"Well done. Continue?"
-      }
+  "translations": [
+    {
+        "key": "intro",
+        "value": "Pak de dozen één voor één van de lopende band en scan de streepjescode. Kies de opslaglocatie waar ze bewaard moeten worden. Gaat de deur open? Dan heb je goed: \\n\\n Reguliere opslag\\n Opslag van gevaarlijke goederen\\n Veilige opslag\\n Koude opslag"
+    },
+    {
+        "key": "intro-button",
+        "value": "Let's go!"
+    },
+    {
+        "key": "start-game",
+        "value": "Start"
+    },
+    {
+        "key": "dropping-boxes",
+        "value": "Pak de doos"
+    },
+    {
+        "key": "find-barcode",
+        "value": "Vind de barcode en klik erop"
+    },
+    {
+        "key": "store-box",
+        "value": "Breng de doos naar de juiste opslaglocatie"
+    },
+    {
+        "key": "box-stored-successful",
+        "value": "Helemaal goed"
+    },
+    {
+        "key": "box-stored-wrong",
+        "value": "Foute locatie voor dit product"
+    },
+    {
+        "key": "game-over",
+        "value": "Game over :("
+    },
+    {
+        "key": "win",
+        "value": "Goed gedaan! Doorgaan?"
+    }
   ],
   "levelsCompleted":[
     {
