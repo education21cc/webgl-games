@@ -122,7 +122,7 @@
   "translations": [
     {
         "key": "intro",
-        "value": "Pak de dozen één voor één van de lopende band en scan de streepjescode. Kies de opslaglocatie waar ze bewaard moeten worden. Gaat de deur open? Dan heb je goed: \\n\\n Reguliere opslag\\n Opslag van gevaarlijke goederen\\n Veilige opslag\\n Koude opslag"
+        "value": "Pak de dozen één voor één van de lopende band en scan de streepjescode. Kies de opslaglocatie waar ze bewaard moeten worden. Gaat de deur open? Dan heb je goed: \n\n Reguliere opslag\n Opslag van gevaarlijke goederen\n Veilige opslag\n Koude opslag"
     },
     {
         "key": "intro-button",
