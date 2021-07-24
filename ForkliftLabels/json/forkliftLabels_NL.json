@@ -1,61 +1,99 @@
 {
-    "userId": 1,
-    "settings": {
-        "muted": false
-    },
-    "content": {
-      "starsRound1": 3,
-      "starsRound2": 3
-    },
-    "translations": [
-      {"key": "Mast",
-        "value": "Mast"},
-        {"key": "Lift Cylinder",
-          "value": "Hefcilinder"},
-          {"key": "Carriage",
-            "value": "Vervoer"},
-            {"key": "Fork",
-              "value": "Vork"},
-              {"key": "Overhead Guard",
-                "value": "Veiligheidskooi"},
-                {"key": "Lights and Horn",
-                  "value": "Lichten en claxon"},
-                  {"key": "Load Backrest",
-                    "value": "Rugleuning' van de lading"},
-                    {"key": "Drive Axle",
-                      "value": "Aandrijf as"},
-                      {"key": "Steer Axle",
-                        "value": "Stuuras"},
-                        {"key": "Seat",
-                          "value": "Stoel"},
-                          {"key": "Counterweight",
-                            "value": "Contra gewicht"},
-                            {"key": "Engine Battery Compartment",
-                              "value": "Motor- / batterijcompartiment"},
-                              {"key": "Operator Cab",
-                                "value": "Bestuurderscabine"},
+   "userId":1,
+   "settings":{
+      "muted":false
+   },
+   "content":{
+      "starsRound1":3,
+      "starsRound2":3
+   },
+   "translations":[
+      {
+         "key":"Mast",
+         "value":"Mast"
+      },
+      {
+         "key":"Lift Cylinder",
+         "value":"Hefcilinder"
+      },
+      {
+         "key":"Carriage",
+         "value":"Vervoer"
+      },
+      {
+         "key":"Fork",
+         "value":"Vork"
+      },
+      {
+         "key":"Overhead Guard",
+         "value":"Veiligheidskooi"
+      },
+      {
+         "key":"Lights and Horn",
+         "value":"Lichten en claxon"
+      },
+      {
+         "key":"Load Backrest",
+         "value":"Rugleuning' van de lading"
+      },
+      {
+         "key":"Drive Axle",
+         "value":"Aandrijf as"
+      },
+      {
+         "key":"Steer Axle",
+         "value":"Stuuras"
+      },
+      {
+         "key":"Seat",
+         "value":"Stoel"
+      },
+      {
+         "key":"Counterweight",
+         "value":"Contra gewicht"
+      },
+      {
+         "key":"Engine Battery Compartment",
+         "value":"Motor- / batterijcompartiment"
+      },
+      {
+         "key":"Operator Cab",
+         "value":"Bestuurderscabine"
+      },
+      {
+         "key":"pressToSpinButton",
+         "value":"Klik om te draaien"
+      },
+      {
+         "key":"checkButton",
+         "value":"Check"
+      },
+      {
+         "key":"instructions",
+         "value":"Sleep de labels naar de goede plek."
+      },
+      {
+         "key":"selectLevel",
+         "value":"Kies een level"
+      },
+      {
+         "key":"feedback_stars0",
+         "value":"Jammer! Probeer het nog een keer!"
+      },
+      {
+         "key":"feedback_stars1",
+         "value":"Best goed, maar je kunt vast beter!"
+      },
+      {
+         "key":"feedback_stars2",
+         "value":"Heel goed! Nog een keer spelen om 3 sterren te halen?"
+      },
+      {
+         "key":"feedback_stars3",
+         "value":"Super! Kan niet beter!"
+      }
+   ],
+   "levelsCompleted":[
 
-                                    {"key": "pressToSpinButton",
-                                      "value": "Klik om te draaien"},
-                                      {"key": "checkButton",
-                                        "value": "Check"},
-                                        {"key": "instructions",
-                                          "value": "Sleep de labels naar de goede plek."},
-
-                                          {"key": "selectLevel",
-                                            "value": "Kies een level"},
-
-                                          {"key": "feedback_stars0",
-                                            "value": "You're out of lives! Drag the labels on the right to the right place and press Check."},
-                                            {"key": "feedback_stars1",
-                                              "value": "Not a great start, try again but without making a mistake!"},
-                                              {"key": "feedback_stars2",
-                                                "value": "Good job! Try again but without losing a life."},
-                                                {"key": "feedback_stars3",
-                                                  "value": "Great job, you know everything about forklifts!"}
-
-      ],
-    "levelsCompleted": [
-
-    ]
+   ]
 }
