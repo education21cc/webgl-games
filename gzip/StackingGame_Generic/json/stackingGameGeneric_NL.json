@@ -1,0 +1,139 @@
+{
+    "userId": 1,
+    "settings": {
+        "muted": false
+    },
+
+    "content": {
+      "rounds": [
+
+      ]
+    },
+
+    "translations":[
+       {
+          "key":"side",
+          "value":"Zijkant"
+       },
+       {
+          "key":"front",
+          "value":"Voorkant"
+       },
+       {
+          "key":"send",
+          "value":"Check"
+       },
+       {
+          "key":"checking",
+          "value":"Checken"
+       },
+       {
+          "key":"ok",
+          "value":"OK"
+       },
+       {
+          "key":"home",
+          "value":"Main menu"
+       },
+       {
+          "key":"levelselection",
+          "value":"Level selectie"
+       },
+       {
+          "key":"play",
+          "value":"Spelen"
+       },
+       {
+          "key":"restart",
+          "value":"Restart"
+       },
+       {
+          "key":"selectalevel",
+          "value":"Kies een level"
+       },
+       {
+          "key":"settings",
+          "value":"Instellingen"
+       },
+       {
+          "key":"feedback",
+          "value":"Heb je opmerkingen? Laat het ons weten!"
+       },
+       {
+          "key":"high",
+          "value":"Hoog"
+       },
+       {
+          "key":"low",
+          "value":"Laag"
+       },
+       {
+          "key":"graphicsquality",
+          "value":"Beeldkwaliteit"
+       },
+       {
+          "key":"tip1",
+          "value":"Boxen moeten opgestapeld worden op een baksteenwijze, met de correcte kant omhoog.\n\nDraai dozen om naar de voorkant om de gaten aan de zijkanten van je stapel te vullen. Je hebt een beperkte tijd om de klus klaar te krijgen."
+       },
+       {
+          "key":"tip2",
+          "value":"Zware dozen moeten aan de onderkant en lichte dozen aan de bovenkant.\n\nZorg ervoor dat een zwaardere doos nooit op een lichtere doos staat. Je hebt een beperkte tijd om de klus klaar te krijgen."
+       },
+       {
+          "key":"",
+          "value":""
+       },
+       {
+          "key":"",
+          "value":""
+       },
+       {
+          "key":"",
+          "value":""
+       },
+       {
+          "key":"issue",
+          "value":"Je hebt hier een probleem!"
+       },
+       {
+          "key":"missingbox",
+          "value":"Er is een probleem met het inpakken."
+       },
+       {
+          "key":"labelissue",
+          "value":"Er is een product wat niet goed omhoog staat."
+       },
+       {
+          "key":"weightissue",
+          "value":"Zorg ervoor dat de zwaarste producten onderaan staan."
+       },
+       {
+          "key":"angleissue",
+          "value":"Dit product staat raar gedraaid."
+       },
+       {
+          "key":"nobrickwise",
+          "value":"Je hebt hier niet volgens baksteenwijze opgestapeld!"
+       },
+       {
+          "key":"level1_stars1",
+          "value":"Probeer minder fouten te maken met het inpakken."
+       },
+       {
+          "key":"level1_stars2",
+          "value":"Bijna goed, probeer beter in te pakken!"
+       },
+       {
+          "key":"level1_stars3",
+          "value":"Geweldig, jij bent de super inpakker!"
+       },
+       {
+          "key":"level1_stars0",
+          "value":"Niet een geweldige beurt... Probeer het nog eens!"
+       }
+
+      ],
+    "levelsCompleted": [
+
+    ]
+}
