@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Warehousing Basics</title>
 	<style>
@@ -21,6 +22,12 @@
 			top: 16px;
 			left: 8px;
 			z-index: 2
+		}
+
+		@media (orientation: portrait) {
+			#back {
+				top: 32px;
+			}
 		}
 
 		div#gameContainer {
@@ -46,7 +53,7 @@
 			-ms-interpolation-mode: nearest-neighbor;
 		}
 	</style>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
 	<link href="loading.css" rel="stylesheet"/>
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
@@ -76,7 +83,7 @@
 </head>
 
 <body>
-	<div id="back" onClick="back()"></br></br>
+	<div id="back" onClick="back()">
 		<svg xmlns="http://www.w3.org/2000/svg" width="30.04" height="30.04" viewBox="0 0 30.04 30.04"><defs><style>.a{fill:#fff;}.a,.b{stroke:#283583;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75px;}.b{fill:none;}</style></defs><title>Back</title><circle class="a" cx="15.02" cy="15.02" r="14.65"/><path class="b" d="M11.64,16" transform="translate(-0.97 -0.93)"/><path class="b" d="M11.63,16" transform="translate(-0.97 -0.93)"/><path class="b" d="M20.38,22.88" transform="translate(-0.97 -0.93)"/><line class="b" x1="19.39" y1="8.16" x2="10.65" y2="15.02"/><line class="b" x1="19.39" y1="21.98" x2="10.65" y2="15.11"/></svg>
   </div>
 	<div class="loading-background">
@@ -183,7 +190,7 @@
 					});
 				});
 			}
-
+			
 			function send(payload) {
 				if (window.hasOwnProperty("webkit") && window.webkit.hasOwnProperty("messageHandlers")){
 					var stringifiedMessageObj = JSON.stringify(payload);
@@ -203,7 +210,7 @@
 
 			function getGameData() {
 				return window.GAMEDATA;
-			}
+			}   
 
 		</script>
 	</div>
