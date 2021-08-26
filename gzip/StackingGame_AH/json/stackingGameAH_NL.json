@@ -73,7 +73,7 @@
        },
        {
           "key":"tip1",
-          "value":"Boxen moeten opgestapeld worden op een baksteenwijze, met de correcte kant omhoog.\n\nDraai dozen om naar de voorkant om de gaten aan de zijkanten van je stapel te vullen. Je hebt een beperkte tijd om de klus klaar te krijgen."
+          "value":"Wij moeten dozen in verband stapelen, met de correcte kant omhoog.\n\nDraai dozen om naar de voorkant om de gaten aan de zijkanten van je stapel te vullen. Je hebt een beperkte tijd om de klus klaar te krijgen."
        },
        {
           "key":"tip2",
@@ -93,46 +93,81 @@
        },
        {
           "key":"issue",
-          "value":"Je hebt hier een probleem!"
+          "value":"Dit klopt niet helemaal"
        },
        {
           "key":"missingbox",
-          "value":"Er is een probleem met het inpakken."
+          "value":"Kan het zijn dat je een product mist?"
        },
        {
           "key":"labelissue",
-          "value":"Er is een product wat niet goed omhoog staat."
+          "value":"Er is een product dat niet met de juiste kant naar boven staat."
        },
        {
           "key":"weightissue",
-          "value":"Zorg ervoor dat de zwaarste producten onderaan staan."
+          "value":"Zorg er altijd voor dat de zwaarste producten onderop staan."
        },
        {
           "key":"angleissue",
-          "value":"Dit product staat raar gedraaid."
+          "value":"Dit product staat met de verkeerde kant naar boven"
        },
        {
           "key":"nobrickwise",
-          "value":"Je hebt hier niet volgens baksteenwijze opgestapeld!"
+          "value":"Je hebt hier niet in verband opgestapeld!"
+       },
+       {
+          "key":"groceriesweightissue",
+          "value":"De lichtste producten moeten altijd bovenop!"
+       },
+       {
+          "key":"didntplaceallboxes",
+          "value":"Alle producten kunnen in het kratje. Het is net een puzzel :-)"
+       },
+       {
+          "key":"protrudingboxes",
+          "value":"Laat niets boven het kratje uitsteken! Dat kan kapot gaan."
+       },
+       {
+          "key":"nonfragileonfragile",
+          "value":"Kwetsbare producten moeten altijd bovenop."
+       },
+       {
+          "key":"emptyspaces",
+          "value":"Alle producten goed tegen elkaar aan plaatsen, zodat er zoveel mogelijk in het kratje kan."
+       },
+       {
+          "key":"specialstackingorder",
+          "value":"Er staan verkeerde producten op elkaar gestapeld. Ze kunnen kapot gaan of beurs worden."
+       },
+       {
+          "key":"unnecessary",
+          "value":"Je hebt producten ingepakt die niet op de lijst staan. Haal deze uit het kratje en pak de juiste producte in."
+       },
+       {
+          "key":"generic",
+          "value":"Er gaat hier iets niet goed!"
+       },
+       {
+          "key":"outoftime",
+          "value":"De tijd is om! Probeer het nog een keer."
        },
        {
           "key":"level1_stars1",
-          "value":"Probeer minder fouten te maken met het inpakken."
+          "value":"Probeer het nog een keer. Hoe minder fouten hoe meer sterren!"
        },
        {
           "key":"level1_stars2",
-          "value":"Bijna goed, probeer beter in te pakken!"
+          "value":"Bijna goed! Nog 1 ster extra te verdienen."
        },
        {
           "key":"level1_stars3",
-          "value":"Geweldig, jij bent de super inpakker!"
+          "value":"Geweldig gedaan! Maximale score!"
        },
        {
           "key":"level1_stars0",
           "value":"Niet een geweldige beurt... Probeer het nog eens!"
        }
-
-      ],
+    ],
     "levelsCompleted": [
 
     ]
