@@ -4,168 +4,96 @@
     "muted":false
   },
   "content":{
-    "goods":[
-      {
-        "text":"Horloges",
-        "destination":"Safe"
-      },
-      {
-        "text":"Appels",
-        "destination":"Freezer"
-      },
-      {
-        "text":"Natrium",
-        "destination":"Dangerous"
-      },
-      {
-        "text":"Tulpen",
-        "destination":"Freezer"
-      },
-      {
-        "text":"Platinum ringen",
-        "destination":"Safe"
-      },
-      {
-        "text":"IJskasten",
-        "destination":"Normal"
-      },
-      {
-        "text":"Boeken",
-        "destination":"Normal"
-      },
-      {
-        "text":"Stoelen",
-        "destination":"Normal"
-      },
-      {
-        "text":"Koffers",
-        "destination":"Normal"
-      },
-      {
-        "text":"Tafels",
-        "destination":"Normal"
-      },
-      {
-        "text":"Autobanden",
-        "destination":"Normal"
-      },
-      {
-        "text":"Smartphones",
-        "destination":"Safe"
-      },
-      {
-        "text":"Insulinespuiten",
-        "destination":"Freezer"
-      },
-      {
-        "text":"Rozen",
-        "destination":"Freezer"
-      },
-      {
-        "text":"Vaccins",
-        "destination":"Freezer"
-      },
-      {
-        "text":"Vlees",
-        "destination":"Freezer"
-      },
-      {
-        "text":"Aardbeien",
-        "destination":"Freezer"
-      },
-      {
-        "text":"Laptops",
-        "destination":"Safe"
-      },
-      {
-        "text":"Bankbiljetten",
-        "destination":"Safe"
-      },
-      {
-        "text":"Diamanten",
-        "destination":"Safe"
-      },
-      {
-        "text":"Microchips",
-        "destination":"Safe"
-      },
-      {
-        "text":"Vuurwerk",
-        "destination":"Dangerous"
-      },
-      {
-        "text":"Chloor",
-        "destination":"Dangerous"
-      },
-      {
-        "text":"Bleekmiddel",
-        "destination":"Dangerous"
-      },
-      {
-        "text":"Benzine",
-        "destination":"Dangerous"
-      },
-      {
-        "text":"Zoutzuur",
-        "destination":"Dangerous"
-      },
-      {
-        "text":"Carbiet",
-        "destination":"Dangerous"
-      },
-      {
-        "text":"Bestrijdingsmiddel",
-        "destination":"Dangerous"
-      }
-    ]
+    "left": ["increase-1", "increase-2", "increase-3", "increase-4", "increase-5"],
+    "right": ["reduce-1", "reduce-2", "reduce-3", "reduce-4", "reduce-5"],
+    "winCondition": 10
   },
-  "translations": [
+  "translations":[
     {
-        "key": "intro",
-        "value": "Pak de dozen één voor één van de lopende band en scan de streepjescode. Kies de opslaglocatie waar ze bewaard moeten worden. Gaat de deur open? Dan heb je goed: \n\n Reguliere opslag\n Opslag van gevaarlijke goederen\n Veilige opslag\n Koude opslag"
+      "key":"intro-header",
+      "value":"Intro"
     },
     {
-        "key": "intro-button",
-        "value": "Let's go!"
+      "key":"intro-description",
+      "value": "Test je kennis. Swipe de dozen naar de laadplek 'vergroten' of 'verkleinen', afhankelijk van wat bij goed warehouse management past. Laat ze niet op de grond vallen!"
     },
     {
-        "key": "start-game",
-        "value": "Start"
+      "key":"intro-button",
+      "value":"Start"
     },
     {
-        "key": "dropping-boxes",
-        "value": "Pak de doos"
+      "key":"lose-header",
+      "value":"Game Over"
     },
     {
-        "key": "find-barcode",
-        "value": "Vind de barcode en klik erop"
+      "key":"lose-description",
+      "value":"Je bent al je hartjes kwijt!"
     },
     {
-        "key": "store-box",
-        "value": "Breng de doos naar de juiste opslaglocatie"
+      "key":"lose-button",
+      "value":"Opnieuw?"
     },
     {
-        "key": "box-stored-successful",
-        "value": "Helemaal goed"
+      "key":"win-header",
+      "value":"Goed gedaan!"
     },
     {
-        "key": "box-stored-wrong",
-        "value": "Foute locatie voor dit product"
+      "key":"win-description",
+      "value":"Jij snapt warehouse management wel."
     },
     {
-        "key": "game-over",
-        "value": "Game over :("
+      "key":"win-button",
+      "value":"Opnieuw"
     },
     {
-        "key": "win",
-        "value": "Goed gedaan! Doorgaan?"
+      "key":"left-area",
+      "value":"Vergroten"
+    },
+    {
+      "key":"right-area",
+      "value":"Verkleinen"
+    },
+    {
+      "key": "increase-1",
+      "value": "Product iviteit"
+    },
+    {
+      "key": "increase-2",
+      "value": "Omloop snelheid"
+    },
+    {
+      "key": "increase-3",
+      "value": "Accuratesse"
+    },
+    {
+      "key": "increase-4",
+      "value": "Doorvoer"
+    },
+    {
+      "key": "increase-5",
+      "value": "Klant tevredenheid"
+    },
+    {
+      "key": "reduce-1",
+      "value": "Kosten"
+    },
+    {
+      "key": "reduce-2",
+      "value": "Milieu impact"
+    },
+    {
+      "key": "reduce-3",
+      "value": "Voorraad"
+    },
+    {
+      "key": "reduce-4",
+      "value": "Doorloop tijd"
+    },
+    {
+      "key": "reduce-5",
+      "value": "Stress"
     }
   ],
   "levelsCompleted":[
-    {
-      "level":1,
-      "score":2,
-      "maxScore":2
-    }
   ]
 }
