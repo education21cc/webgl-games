@@ -3,8 +3,9 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>RL Warehousing Basics - November Update</title>
+	<title>Warehousing Basics</title>
 	<style>
 		html,
 		body {
@@ -21,6 +22,12 @@
 			top: 16px;
 			left: 8px;
 			z-index: 2
+		}
+
+		@media (orientation: portrait) {
+			#back {
+				top: 32px;
+			}
 		}
 
 		div#gameContainer {
@@ -100,17 +107,17 @@
 			var perf = firebase.performance();
 
 			const trace = perf.trace('createUnityInstanceTrace');
-			trace.putAttribute('game', "RL Warehousing Basics - November Update");
+			trace.putAttribute('game', "Warehousing Basics");
 			trace.putAttribute('path', location.pathname.lastIndexOf('/index') == -1 ? location.pathname : location.pathname.substring(0, location.pathname.lastIndexOf('/index')));
 			trace.start();
 
 			createUnityInstance(document.querySelector("#unity-canvas"), {
-				dataUrl: "Build/Module001.data.gz",
-				frameworkUrl: "Build/Module001.framework.js.gz",
-				codeUrl: "Build/Module001.wasm.gz",
+				dataUrl: "Build/Module001.data.unityweb",
+				frameworkUrl: "Build/Module001.framework.js.unityweb",
+				codeUrl: "Build/Module001.wasm.unityweb",
 				streamingAssetsUrl: "StreamingAssets",
-				companyName: "DefaultCompany",
-				productName: "RL Warehousing Basics - November Update",
+				companyName: "21CC Education",
+				productName: "Warehousing Basics",
 				productVersion: "0.1",
 			}).then(function (instance) {
 				performance.mark('doneCreateUnityInstance');
