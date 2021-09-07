@@ -1,0 +1,105 @@
+{
+  "userId":7,
+  "settings":{
+    "muted":false
+  },
+  "content":{
+    "left": ["increase-1", "increase-2", "increase-3", "increase-4", "increase-5"],
+    "right": ["reduce-1", "reduce-2", "reduce-3", "reduce-4", "reduce-5"],
+    "winCondition":6
+  },
+  "translations":[
+    {
+      "key":"intro-header",
+      "value":"Intro"
+    },
+    {
+      "key":"intro-description",
+      "value":"Test your knowledge. Swipe the boxes as they come along the conveyor belt to 'increase' or 'reduce' slots. Don't let the boxes fall to the ground!"
+    },
+    {
+      "key":"intro-button",
+      "value":"Start"
+    },
+    {
+      "key":"lose-header",
+      "value":"Game Over"
+    },
+    {
+      "key":"lose-description",
+      "value":"You lost all your hearts!"
+    },
+    {
+      "key":"lose-button",
+      "value":"Try again?"
+    },
+    {
+      "key":"win-header",
+      "value":"Good job!"
+    },
+    {
+      "key":"win-description",
+      "value":"You sure know about warehouse management."
+    },
+    {
+      "key":"win-button",
+      "value":"Continue"
+    },
+    {
+      "key":"left-area",
+      "value":"Increase"
+    },
+    {
+      "key":"right-area",
+      "value":"Reduce"
+    },
+    {
+      "key": "increase-1",
+      "value": "Productivity"
+    },
+    {
+      "key": "increase-2",
+      "value": "Inventory Turns"
+    },
+    {
+      "key": "increase-3",
+      "value": "Accuracy"
+    },
+    {
+      "key": "increase-4",
+      "value": "Throughput"
+    },
+    {
+      "key": "increase-5",
+      "value": "Customer Satisfaction"
+    },
+    {
+      "key": "reduce-1",
+      "value": "Costs"
+    },
+    {
+      "key": "reduce-2",
+      "value": "Environmental impact"
+    },
+    {
+      "key": "reduce-3",
+      "value": "Stock"
+    },
+    {
+      "key": "reduce-4",
+      "value": "Lead times"
+    },
+    {
+      "key": "reduce-5",
+      "value": "Stress"
+    }
+  ],
+  "levelsCompleted":[
+    {
+      "level":1,
+      "score":2,
+      "maxScore":2
+    }
+  ]
+}
+

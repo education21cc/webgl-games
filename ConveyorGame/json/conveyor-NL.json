@@ -1,0 +1,99 @@
+{
+  "userId":7,
+  "settings":{
+    "muted":false
+  },
+  "content":{
+    "left": ["increase-1", "increase-2", "increase-3", "increase-4", "increase-5"],
+    "right": ["reduce-1", "reduce-2", "reduce-3", "reduce-4", "reduce-5"],
+    "winCondition": 10
+  },
+  "translations":[
+    {
+      "key":"intro-header",
+      "value":"Intro"
+    },
+    {
+      "key":"intro-description",
+      "value": "Test je kennis. Swipe de dozen naar de laadplek 'vergroten' of 'verkleinen', afhankelijk van wat bij goed warehouse management past. Laat ze niet op de grond vallen!"
+    },
+    {
+      "key":"intro-button",
+      "value":"Start"
+    },
+    {
+      "key":"lose-header",
+      "value":"Game Over"
+    },
+    {
+      "key":"lose-description",
+      "value":"Je bent al je hartjes kwijt!"
+    },
+    {
+      "key":"lose-button",
+      "value":"Opnieuw?"
+    },
+    {
+      "key":"win-header",
+      "value":"Goed gedaan!"
+    },
+    {
+      "key":"win-description",
+      "value":"Jij snapt warehouse management wel."
+    },
+    {
+      "key":"win-button",
+      "value":"Opnieuw"
+    },
+    {
+      "key":"left-area",
+      "value":"Vergroten"
+    },
+    {
+      "key":"right-area",
+      "value":"Verkleinen"
+    },
+    {
+      "key": "increase-1",
+      "value": "Product iviteit"
+    },
+    {
+      "key": "increase-2",
+      "value": "Omloop snelheid"
+    },
+    {
+      "key": "increase-3",
+      "value": "Accuratesse"
+    },
+    {
+      "key": "increase-4",
+      "value": "Doorvoer"
+    },
+    {
+      "key": "increase-5",
+      "value": "Klant tevredenheid"
+    },
+    {
+      "key": "reduce-1",
+      "value": "Kosten"
+    },
+    {
+      "key": "reduce-2",
+      "value": "Milieu impact"
+    },
+    {
+      "key": "reduce-3",
+      "value": "Voorraad"
+    },
+    {
+      "key": "reduce-4",
+      "value": "Doorloop tijd"
+    },
+    {
+      "key": "reduce-5",
+      "value": "Stress"
+    }
+  ],
+  "levelsCompleted":[
+  ]
+}

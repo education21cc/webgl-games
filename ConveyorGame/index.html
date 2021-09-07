@@ -48,13 +48,36 @@
 	</style>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
 	<link href="loading.css" rel="stylesheet"/>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
 
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+			https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-performance.js"></script>
+
+	<script>
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		var firebaseConfig = {
+			apiKey: "AIzaSyBWKGWUKxa-gU97o3awFAQfqno7ga6vXSw",
+			authDomain: "education21cc-player-gecko.firebaseapp.com",
+			databaseURL: "https://education21cc-player-gecko.firebaseio.com",
+			projectId: "education21cc-player-gecko",
+			storageBucket: "education21cc-player-gecko.appspot.com",
+			messagingSenderId: "850039953371",
+			appId: "1:850039953371:web:1f37a16c52b434e88c79fe",
+			measurementId: "G-MGNY7YCGB6"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+	</script>
 </head>
 
 <body>
 	<div id="back" onClick="back()">
-		<svg xmlns="http://www.w3.org/2000/svg" width="30.04" height="30.04" viewBox="0 0 30.04 30.04"><defs><style>.a{fill:#fff;}.a,.b{stroke:#283583;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75px;}.b{fill:none;}</style></defs><title>Back</title><circle class="a" cx="15.02" cy="15.02" r="14.65"/><path class="b" d="M11.64,16" transform="translate(-0.97 -0.93)"/><path class="b" d="M11.63,16" transform="translate(-0.97 -0.93)"/><path class="b" d="M20.38,22.88" transform="translate(-0.97 -0.93)"/><line class="b" x1="19.39" y1="8.16" x2="10.65" y2="15.02"/><line class="b" x1="19.39" y1="21.98" x2="10.65" y2="15.11"/></svg>
-  </div>
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="30px" height="30px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve"><style type="text/css">	.a{fill:#FFFFFF;stroke:#283583;stroke-linecap:round;stroke-linejoin:round;}</style><circle class="a" cx="15" cy="15" r="14.3"/><path class="a" d="M10.7,15.1"/><path class="a" d="M10.7,15.1"/><path class="a" d="M19.4,22"/><line class="a" x1="19.4" y1="8.2" x2="10.6" y2="15"/><line class="a" x1="19.4" y1="22" x2="10.6" y2="15.1"/></svg>  </div>
 	<div class="loading-background">
 		<div class='white-block'>
 			<div class='outset'></div>
@@ -72,15 +95,26 @@
 		<script src="Build/ConveyorGame.loader.js"></script>
 		<script>
 			var unityInstance;
+			performance.mark('startCreateUnityInstance');
+			var perf = firebase.performance();
+
+			const trace = perf.trace('createUnityInstanceTrace');
+			trace.putAttribute('game', "Conveyor");
+			trace.putAttribute('path', location.pathname.lastIndexOf('/index') == -1 ? location.pathname : location.pathname.substring(0, location.pathname.lastIndexOf('/index')));
+			trace.start();
+
 			createUnityInstance(document.querySelector("#unity-canvas"), {
-				dataUrl: "Build/ConveyorGame.data.br",
-				frameworkUrl: "Build/ConveyorGame.framework.js.br",
-				codeUrl: "Build/ConveyorGame.wasm.br",
+				dataUrl: "Build/ConveyorGame.data",
+				frameworkUrl: "Build/ConveyorGame.framework.js",
+				codeUrl: "Build/ConveyorGame.wasm",
 				streamingAssetsUrl: "StreamingAssets",
 				companyName: "Education21CC",
 				productName: "Conveyor",
 				productVersion: "0.2",
 			}).then(function (instance) {
+				performance.mark('doneCreateUnityInstance');
+				trace.stop();
+
 				unityInstance = instance;
 				var canvas = instance.Module.canvas;
 				var container = canvas.parentElement;
@@ -131,22 +165,21 @@
 			}
 
 			function back() {
-				const callback = function() {
-					console.log("i quit")
+				unityInstance.Quit().then(function() {
 					send({
 						type: 'back'
 					});
-				};
-				// the callback is not working from unityInstance.Quit: 
-				// https://forum.unity.com/threads/quit-and-memory-cleanup.571210/
-				setTimeout(callback, 250);
-
-				unityInstance.Quit();
+				});
 			}
 
 			window.exit = function() {
-				send({
-					type: 'exit'
+				const trace = perf.trace('stopUnityInstanceTrace');
+				trace.start();
+				unityInstance.Quit().then(function() {
+					trace.stop();
+					send({
+						type: 'exit'
+					});
 				});
 			}
 			
