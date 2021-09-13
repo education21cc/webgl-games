@@ -13,11 +13,11 @@
     "translations":[
        {
           "key":"side",
-          "value":"Zijkant"
+          "value":"Side"
        },
        {
           "key":"front",
-          "value":"Voorkant"
+          "value":"Front"
        },
        {
           "key":"send",
@@ -25,7 +25,7 @@
        },
        {
           "key":"checking",
-          "value":"Checken"
+          "value":"Checking"
        },
        {
           "key":"ok",
@@ -37,11 +37,11 @@
        },
        {
           "key":"levelselection",
-          "value":"Level selectie"
+          "value":"Level selection"
        },
        {
           "key":"play",
-          "value":"Spelen"
+          "value":"Play"
        },
        {
           "key":"restart",
@@ -49,95 +49,107 @@
        },
        {
           "key":"selectalevel",
-          "value":"Kies een level"
+          "value":"Choose a level"
        },
        {
           "key":"settings",
-          "value":"Instellingen"
+          "value":"Settings"
        },
        {
           "key":"feedback",
-          "value":"Heb je opmerkingen? Laat het ons weten!"
+          "value":"Comments? Let us know!"
        },
        {
           "key":"high",
-          "value":"Hoog"
+          "value":"High"
        },
        {
           "key":"low",
-          "value":"Laag"
+          "value":"Low"
        },
        {
           "key":"graphicsquality",
-          "value":"Beeldkwaliteit"
+          "value":"Graphics quality"
        },
        {
           "key":"tip1",
-          "value":"Wij moeten dozen in verband stapelen, met de correcte kant omhoog.\n\nDraai dozen om naar de voorkant om de gaten aan de zijkanten van je stapel te vullen. Je hebt een beperkte tijd om de klus klaar te krijgen."
+          "value":""
        },
        {
           "key":"tip2",
-          "value":"Zware dozen moeten aan de onderkant en lichte dozen aan de bovenkant.\n\nZorg ervoor dat een zwaardere doos nooit op een lichtere doos staat. Je hebt een beperkte tijd om de klus klaar te krijgen."
+          "value":""
        },
        {
           "key":"issue",
-          "value":"Dit klopt niet helemaal"
+          "value":"This wasn't totally right."
        },
        {
           "key":"missingbox",
-          "value":"Kan het zijn dat je een product mist?"
+          "value":"Could it be that you miss 1 or 2 products?"
        },
        {
           "key":"labelissue",
-          "value":"Er is een product dat niet met de juiste kant naar boven staat."
+          "value":"A product is facing the wrong way."
        },
        {
           "key":"weightissue",
-          "value":"Zorg er altijd voor dat de zwaarste producten onderop staan."
+          "value":"Always make sure that the heaviest products are on the bottom."
        },
        {
           "key":"angleissue",
-          "value":"Dit product staat met de verkeerde kant naar boven"
+          "value":"A product is facing the wrong way."
        },
        {
           "key":"nobrickwise",
-          "value":"Je hebt hier niet in verband opgestapeld!"
+          "value":""
        },
        {
           "key":"groceriesweightissue",
-          "value":"De lichtste producten moeten altijd bovenop!"
+          "value":"The lightest products should always be on top!"
        },
        {
           "key":"didntplaceallboxes",
-          "value":"Alle producten kunnen in het kratje. Het is net een puzzel :-)"
+          "value":"All products can be put in the crate. It's like a puzzle :-)"
        },
        {
           "key":"protrudingboxes",
-          "value":"Laat niets boven het kratje uitsteken! Dat kan kapot gaan."
+          "value":"Don't let anything stick out above the crate! That could break."
        },
        {
           "key":"nonfragileonfragile",
-          "value":"Kwetsbare producten moeten altijd bovenop."
+          "value":"Vulnerable products must always be on top."
        },
        {
           "key":"emptyspaces",
-          "value":"Alle producten goed tegen elkaar aan plaatsen, zodat er zoveel mogelijk in het kratje kan."
+          "value":"Place all products well against each other, so that as many products as possible can be placed in the crate."
        },
        {
           "key":"specialstackingorder",
-          "value":"Er staan verkeerde producten op elkaar gestapeld. Ze kunnen kapot gaan of beurs worden."
+          "value":"Wrong products are stacked on top of each other. They can break or go broke."
        },
        {
           "key":"unnecessary",
-          "value":"Je hebt producten ingepakt die niet op de lijst staan. Haal deze uit het kratje en pak de juiste producte in."
+          "value":"You packed products that are not on the list. Remove them from the crate and pack the correct products."
        },
        {
           "key":"generic",
-          "value":"Er gaat hier iets niet goed!"
+          "value":"Something goes wrong!"
        },
        {
           "key":"outoftime",
-          "value":"De tijd is om! Probeer het nog een keer."
+          "value":"Time is up! Please try again!"
+       },
+       {
+          "key":"brokenproduct",
+          "value":"You packed broken products! That's not allowed. Drag them into the garbage bag."
+       },
+       {
+          "key":"droppedfragileitem",
+          "value":"Please don't drop anything! "
+       },
+       {
+          "key":"threwawaywrongproduct",
+          "value":"You shouldn't have thrown this product away!"
        },
        {
           "key":"feedbacklist",
@@ -145,19 +157,19 @@
        },
        {
           "key":"level1_stars1",
-          "value":"Probeer het nog een keer. Hoe minder fouten hoe meer sterren!"
+          "value":"Please try again. The more mistakes the more stars you win!"
        },
        {
           "key":"level1_stars2",
-          "value":"Bijna goed! Nog 1 ster extra te verdienen."
+          "value":"Almost right! Just one more star to gain."
        },
        {
           "key":"level1_stars3",
-          "value":"Geweldig gedaan! Maximale score!"
+          "value":"Great! Maximum score!"
        },
        {
           "key":"level1_stars0",
-          "value":"Niet een geweldige beurt... Probeer het nog eens!"
+          "value":"Not so good yet.... Please try again!"
        }
     ],
     "levelsCompleted": [
