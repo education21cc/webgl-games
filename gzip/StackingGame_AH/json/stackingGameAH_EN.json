@@ -1,0 +1,178 @@
+{
+    "userId": 1,
+    "settings": {
+        "muted": false
+    },
+
+    "content": {
+      "rounds": [
+
+      ]
+    },
+
+    "translations":[
+       {
+          "key":"side",
+          "value":"Side"
+       },
+       {
+          "key":"front",
+          "value":"Front"
+       },
+       {
+          "key":"send",
+          "value":"Check"
+       },
+       {
+          "key":"checking",
+          "value":"Checking"
+       },
+       {
+          "key":"ok",
+          "value":"OK"
+       },
+       {
+          "key":"home",
+          "value":"Main menu"
+       },
+       {
+          "key":"levelselection",
+          "value":"Level selection"
+       },
+       {
+          "key":"play",
+          "value":"Play"
+       },
+       {
+          "key":"restart",
+          "value":"Restart"
+       },
+       {
+          "key":"selectalevel",
+          "value":"Choose a level"
+       },
+       {
+          "key":"settings",
+          "value":"Settings"
+       },
+       {
+          "key":"feedback",
+          "value":"Comments? Let us know!"
+       },
+       {
+          "key":"high",
+          "value":"High"
+       },
+       {
+          "key":"low",
+          "value":"Low"
+       },
+       {
+          "key":"graphicsquality",
+          "value":"Graphics quality"
+       },
+       {
+          "key":"tip1",
+          "value":""
+       },
+       {
+          "key":"tip2",
+          "value":""
+       },
+       {
+          "key":"issue",
+          "value":"This wasn't totally right."
+       },
+       {
+          "key":"missingbox",
+          "value":"Could it be that you miss 1 or 2 products?"
+       },
+       {
+          "key":"labelissue",
+          "value":"A product is facing the wrong way."
+       },
+       {
+          "key":"weightissue",
+          "value":"Always make sure that the heaviest products are on the bottom."
+       },
+       {
+          "key":"angleissue",
+          "value":"A product is facing the wrong way."
+       },
+       {
+          "key":"nobrickwise",
+          "value":""
+       },
+       {
+          "key":"groceriesweightissue",
+          "value":"The lightest products should always be on top!"
+       },
+       {
+          "key":"didntplaceallboxes",
+          "value":"All products can be put in the crate. It's like a puzzle :-)"
+       },
+       {
+          "key":"protrudingboxes",
+          "value":"Don't let anything stick out above the crate! That could break."
+       },
+       {
+          "key":"nonfragileonfragile",
+          "value":"Vulnerable products must always be on top."
+       },
+       {
+          "key":"emptyspaces",
+          "value":"Place all products well against each other, so that as many products as possible can be placed in the crate."
+       },
+       {
+          "key":"specialstackingorder",
+          "value":"Wrong products are stacked on top of each other. They can break or go broke."
+       },
+       {
+          "key":"unnecessary",
+          "value":"You packed products that are not on the list. Remove them from the crate and pack the correct products."
+       },
+       {
+          "key":"generic",
+          "value":"Something goes wrong!"
+       },
+       {
+          "key":"outoftime",
+          "value":"Time is up! Please try again!"
+       },
+       {
+          "key":"brokenproduct",
+          "value":"You packed broken products! That's not allowed. Drag them into the garbage bag."
+       },
+       {
+          "key":"droppedfragileitem",
+          "value":"Please don't drop anything! "
+       },
+       {
+          "key":"threwawaywrongproduct",
+          "value":"You shouldn't have thrown this product away!"
+       },
+       {
+          "key":"feedbacklist",
+          "value":"Make sure that products should:\n- never be higher than the crate\n- not be broken\n- always be clean\n- not pass their sell by date\n- be with the right way up\n- sorted by weight (light on top)"
+       },
+       {
+          "key":"level1_stars1",
+          "value":"Please try again. The more mistakes the more stars you win!"
+       },
+       {
+          "key":"level1_stars2",
+          "value":"Almost right! Just one more star to gain."
+       },
+       {
+          "key":"level1_stars3",
+          "value":"Great! Maximum score!"
+       },
+       {
+          "key":"level1_stars0",
+          "value":"Not so good yet.... Please try again!"
+       }
+    ],
+    "levelsCompleted": [
+
+    ]
+}
