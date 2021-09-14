@@ -111,7 +111,7 @@
 				streamingAssetsUrl: "StreamingAssets",
 				companyName: "21CC B.V.",
 				productName: "21CC Player",
-				productVersion: "1.040",
+				productVersion: "1.042",
 			}).then(function (instance) {
 				performance.mark('doneCreateUnityInstance');
 				trace.stop();
@@ -129,15 +129,15 @@
 						w = window.innerWidth;
 						h = window.innerHeight;
 
-						var r = 375 / 635;
+						var r = 635 / 375;
 
 						if (w * r > window.innerHeight) {
 							w = Math.min(w, Math.ceil(h / r));
 						}
 						h = Math.floor(w * r);
 					} else {
-						w = 635;
-						h = 375;
+						w = 375;
+						h = 635;
 					}
 
 					container.style.width = canvas.style.width = w + "px";
