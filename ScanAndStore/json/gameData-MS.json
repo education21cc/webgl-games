@@ -50,7 +50,7 @@
   "translations": [
     {
         "key": "intro",
-        "value": "Produk akan melalui tali sawat.  Tangkap mereka dari tali sawat dan cari kod bar untuk mengimbas.  Carikan lokasi penyimpanan terbaik di gudang untuk menyimpankan barang: \\ n \\ n Penyimpanan Biasa \\ n Penyimpanan Barang Berbahaya \\ n Penyimpanan Keselamatan\\ n Penyimpanan Sejuk"
+        "value": "Produk akan melalui tali sawat.  Tangkap mereka dari tali sawat dan cari kod bar untuk mengimbas.  Carikan lokasi penyimpanan terbaik di gudang untuk menyimpankan barang: \n \n Penyimpanan Biasa \n Penyimpanan Barang Berbahaya \n Penyimpanan Keselamatan\n Penyimpanan Sejuk"
     },
     {
         "key": "intro-button",
