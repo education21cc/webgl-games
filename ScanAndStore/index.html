@@ -23,6 +23,12 @@
 			z-index: 2
 		}
 
+		@media (orientation: portrait) {
+			#back {
+				top: 32px;
+			}
+		}
+
 		div#gameContainer {
 			background: transparent !important;
 			position: absolute;
@@ -53,8 +59,7 @@
 
 <body>
 	<div id="back" onClick="back()">
-		<svg xmlns="http://www.w3.org/2000/svg" width="30.04" height="30.04" viewBox="0 0 30.04 30.04"><defs><style>.a{fill:#fff;}.a,.b{stroke:#283583;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75px;}.b{fill:none;}</style></defs><title>Back</title><circle class="a" cx="15.02" cy="15.02" r="14.65"/><path class="b" d="M11.64,16" transform="translate(-0.97 -0.93)"/><path class="b" d="M11.63,16" transform="translate(-0.97 -0.93)"/><path class="b" d="M20.38,22.88" transform="translate(-0.97 -0.93)"/><line class="b" x1="19.39" y1="8.16" x2="10.65" y2="15.02"/><line class="b" x1="19.39" y1="21.98" x2="10.65" y2="15.11"/></svg>
-  </div>
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="30px" height="30px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve"><style type="text/css">	.a{fill:#FFFFFF;stroke:#283583;stroke-linecap:round;stroke-linejoin:round;}</style><circle class="a" cx="15" cy="15" r="14.3"/><path class="a" d="M10.7,15.1"/><path class="a" d="M10.7,15.1"/><path class="a" d="M19.4,22"/><line class="a" x1="19.4" y1="8.2" x2="10.6" y2="15"/><line class="a" x1="19.4" y1="22" x2="10.6" y2="15.1"/></svg>  </div>
 	<div class="loading-background">
 		<div class='white-block'>
 			<div class='outset'></div>
