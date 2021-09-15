@@ -80,18 +80,6 @@
           "value":"Zware dozen moeten aan de onderkant en lichte dozen aan de bovenkant.\n\nZorg ervoor dat een zwaardere doos nooit op een lichtere doos staat. Je hebt een beperkte tijd om de klus klaar te krijgen."
        },
        {
-          "key":"",
-          "value":""
-       },
-       {
-          "key":"",
-          "value":""
-       },
-       {
-          "key":"",
-          "value":""
-       },
-       {
           "key":"issue",
           "value":"Dit klopt niet helemaal"
        },
@@ -150,6 +138,10 @@
        {
           "key":"outoftime",
           "value":"De tijd is om! Probeer het nog een keer."
+       },
+       {
+          "key":"feedbacklist",
+          "value":"Make sure that products should:\n- never be higher than the crate\n- not be broken\n- always be clean\n- not pass their sell by date\n- be with the right way up\n- sorted by weight (light on top)"
        },
        {
           "key":"level1_stars1",
