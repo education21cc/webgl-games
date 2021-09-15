@@ -1,0 +1,99 @@
+{
+  "userId":7,
+  "settings":{
+    "muted":false
+  },
+  "content":{
+    "left": ["increase-1", "increase-2", "increase-3", "increase-4", "increase-5"],
+    "right": ["reduce-1", "reduce-2", "reduce-3", "reduce-4", "reduce-5"],
+    "winCondition": 10
+  },
+  "translations": [
+    {
+        "key": "intro-header",
+        "value": "Pengenalan"
+    },
+    {
+        "key": "intro-description",
+        "value": "Ujilah pengetahuan anda. Leret kotak-kotak semasa mereka berada di sepanjang tali sawat untuk 'tambahkan' atau 'kurangkan' slot. Jangan biarkan kotak-kotak jatuh ke tanah!"
+    },
+    {
+        "key": "intro-button",
+        "value": "Mula"
+    },
+    {
+        "key": "lose-header",
+        "value": "Permainan Tamat"
+    },
+    {
+        "key": "lose-description",
+        "value": "Anda telah kehilangan semua hati anda!"
+    },
+    {
+        "key": "lose-button",
+        "value": "Cuba lagi?"
+    },
+    {
+        "key": "win-header",
+        "value": "Syabas!"
+    },
+    {
+        "key": "win-description",
+        "value": "Anda sememangnya tahu mengenai pengurusan gudang."
+    },
+    {
+        "key": "win-button",
+        "value": "Teruskan"
+    },
+    {
+        "key": "left-area",
+        "value": "Tambahkan"
+    },
+    {
+        "key": "right-area",
+        "value": "Kurangkan"
+    },
+    {
+        "key": "increase-1",
+        "value": "Produktiviti"
+    },
+    {
+        "key": "increase-2",
+        "value": "Giliran Inventori"
+    },
+    {
+        "key": "increase-3",
+        "value": "Ketepatan"
+    },
+    {
+        "key": "increase-4",
+        "value": "Daya Pemprosesan"
+    },
+    {
+        "key": "increase-5",
+        "value": "Kepuasan Hati Pelanggan"
+    },
+    {
+        "key": "reduce-1",
+        "value": "Kos-kos"
+    },
+    {
+        "key": "reduce-2",
+        "value": "Kesan pada alam sekitar"
+    },
+    {
+        "key": "reduce-3",
+        "value": "Stok"
+    },
+    {
+        "key": "reduce-4",
+        "value": "Masa tunggu"
+    },
+    {
+        "key": "reduce-5",
+        "value": "Stres"
+    }
+  ],
+  "levelsCompleted":[
+  ]
+}
