@@ -1,0 +1,99 @@
+{
+  "userId":7,
+  "settings":{
+    "muted":false
+  },
+  "content":{
+    "left": ["increase-1", "increase-2", "increase-3", "increase-4", "increase-5"],
+    "right": ["reduce-1", "reduce-2", "reduce-3", "reduce-4", "reduce-5"],
+    "winCondition": 10
+  },
+  "translations": [
+    {
+        "key": "intro-header",
+        "value": "介绍"
+    },
+    {
+        "key": "intro-description",
+        "value": "测试你的知识。 当它们沿着传送带出现时，滑动它们到“增加”或“减少”槽。 不要让箱子掉到地上！"
+    },
+    {
+        "key": "intro-button",
+        "value": "开始"
+    },
+    {
+        "key": "lose-header",
+        "value": "游戏结束"
+    },
+    {
+        "key": "lose-description",
+        "value": "你已失去了所有的心！"
+    },
+    {
+        "key": "lose-button",
+        "value": "再试一次？"
+    },
+    {
+        "key": "win-header",
+        "value": "做得好！"
+    },
+    {
+        "key": "win-description",
+        "value": "管理"
+    },
+    {
+        "key": "win-button",
+        "value": "继续"
+    },
+    {
+        "key": "left-area",
+        "value": "增加"
+    },
+    {
+        "key": "right-area",
+        "value": "减少"
+    },
+    {
+        "key": "increase-1",
+        "value": "生产力"
+    },
+    {
+        "key": "increase-2",
+        "value": "存货周转"
+    },
+    {
+        "key": "increase-3",
+        "value": "准确性"
+    },
+    {
+        "key": "increase-4",
+        "value": "吞吐量"
+    },
+    {
+        "key": "increase-5",
+        "value": "客户满意度"
+    },
+    {
+        "key": "reduce-1",
+        "value": "成本"
+    },
+    {
+        "key": "reduce-2",
+        "value": "对环境的影响"
+    },
+    {
+        "key": "reduce-3",
+        "value": "库存"
+    },
+    {
+        "key": "reduce-4",
+        "value": "准备时期"
+    },
+    {
+        "key": "reduce-5",
+        "value": "压力"
+    }
+  ],
+  "levelsCompleted":[
+  ]
+}
