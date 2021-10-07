@@ -4,7 +4,7 @@ services:
   env: static
   staticPublishPath: ./
   headers:
-# CORS header for JSONS    
+# CORS header for JSONS
   - path: /**/json/*.json
     name: Access-Control-Allow-Origin
     value: "*"
@@ -36,10 +36,10 @@ services:
   # - path: /brotli/**/*js.unityweb
   #   name: Content-Encoding
   #   value: br
-# gzip  
-  # - path: /gzip/**/*js.gz
-  #   name: Content-Encoding
-  #   value: gzip
+# gzip
+  - path: /gzip/**/*js.gz
+    name: Content-Encoding
+    value: gzip
   # - path: /gzip/**/*data.gz
   #   name: Content-Encoding
   #   value: gzip
