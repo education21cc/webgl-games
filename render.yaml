@@ -37,15 +37,15 @@ services:
   #   name: Content-Encoding
   #   value: br
 # gzip
-  - path: /gzip/**/*js.gz
-    name: Content-Encoding
-    value: gzip
+  # - path: /gzip/**/*js.gz
+  #   name: Content-Encoding
+  #   value: gzip
   # - path: /gzip/**/*data.gz
   #   name: Content-Encoding
   #   value: gzip
-  - path: /gzip/**/*wasm.gz
-    name: Content-Encoding
-    value: gzip
+  # - path: /gzip/**/*wasm.gz
+  #   name: Content-Encoding
+  #   value: gzip
   # - path: /gzip/**/*data.unityweb
   #   name: Content-Encoding
   #   value: gzip
