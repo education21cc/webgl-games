@@ -78,13 +78,13 @@
 		<script>
 			var unityInstance;
 			createUnityInstance(document.querySelector("#unity-canvas"), {
-				dataUrl: "Build/ScanAndStore.data.br",
-				frameworkUrl: "Build/ScanAndStore.framework.js.br",
-				codeUrl: "Build/ScanAndStore.wasm.br",
+				dataUrl: "Build/ScanAndStore.data.gz",
+				frameworkUrl: "Build/ScanAndStore.framework.js.gz",
+				codeUrl: "Build/ScanAndStore.wasm.gz",
 				streamingAssetsUrl: "StreamingAssets",
 				companyName: "Education21cc",
 				productName: "ScanAndStore",
-				productVersion: "0.1",
+				productVersion: "2",
 			}).then(function (instance) {
 				unityInstance = instance;
 				var canvas = instance.Module.canvas;
