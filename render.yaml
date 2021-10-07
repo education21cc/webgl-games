@@ -43,9 +43,9 @@ services:
   # - path: /gzip/**/*data.gz
   #   name: Content-Encoding
   #   value: gzip
-  # - path: /gzip/**/*wasm.gz
-  #   name: Content-Encoding
-  #   value: gzip
+  - path: /gzip/**/*wasm.gz
+    name: Content-Encoding
+    value: gzip
   # - path: /gzip/**/*data.unityweb
   #   name: Content-Encoding
   #   value: gzip
