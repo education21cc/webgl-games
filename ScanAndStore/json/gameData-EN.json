@@ -1,0 +1,116 @@
+{
+  "userId":7,
+  "settings":{
+    "muted":false
+  },
+  "boxCount": 6,
+  "content":{
+    "goods":[
+      {
+        "text":"Watches",
+        "destination":"Safe"
+      },
+      {
+        "text":"Bananas",
+        "destination":"Freezer"
+      },
+      {
+        "text":"Nitroglycerine",
+        "destination":"Dangerous"
+      },
+      {
+        "text":"Fresh Tulips",
+        "destination":"Freezer"
+      },
+      {
+        "text":"Platinum rings",
+        "destination":"Safe"
+      },
+      {
+        "text":"Refrigerators",
+        "destination":"Normal"
+      },
+      {
+        "text":"Smartphones",
+        "destination":"Safe"
+      },
+      {
+        "text":"Insulin pens",
+        "destination":"Freezer"
+      },
+      {
+        "text":"Laptops",
+        "destination":"Safe"
+      },
+      {
+        "text":" Sodium hydroxide",
+        "destination":"Dangerous"
+      }
+    ]
+  },
+  "translations": [
+    {
+        "key": "intro",
+        "value": "Products will pass on the conveyor belt. Grab them from the belt and find the bar code to scan. Find the best storage location in the warehouse to store goods:  \n\n Regular storage\n Dangerous Goods storage\n Safe storage\n Cold storage"
+    },
+    {
+        "key": "intro-button",
+        "value": "Let's go!"
+    },
+    {
+        "key": "start-game",
+        "value": "Get ready!"
+    },
+    {
+        "key": "dropping-boxes",
+        "value": "Grab a box from the belt"
+    },
+    {
+        "key": "find-barcode",
+        "value": "Find the barcode"
+    },
+    {
+        "key": "store-box",
+        "value": "Bring the box to the correct storage location"
+    },
+    {
+        "key": "box-stored-successful",
+        "value": "Very good"
+    },
+    {
+        "key": "box-stored-wrong",
+        "value": "Wrong location for this product"
+    },
+    {
+        "key": "game-over-header",
+        "value": "Game over :("
+    },
+    {
+        "key": "game-over",
+        "value": "You have made too many mistakes. "
+    },
+    {
+        "key": "win-header",
+        "value": "Yes!"
+    },
+    {
+        "key": "win",
+        "value": "Well done. Continue?"
+    },
+    {
+        "key": "result-try-again",
+        "value": "Try again"
+    },
+    {
+        "key": "result-exit",
+        "value": "Exit"
+    }
+  ],
+  "levelsCompleted":[
+    {
+      "level":1,
+      "score":2,
+      "maxScore":2
+    }
+  ]
+}
