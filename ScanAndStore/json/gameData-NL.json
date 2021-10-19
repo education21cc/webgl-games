@@ -1,188 +1,172 @@
 {
-  "userId":7,
-  "settings":{
-    "muted":false
+  "userId": 7,
+  "settings": {
+    "muted": false
   },
-  "content":{
-      "boxCount": 6,
-      "goods":[
-      {
-        "text":"Horloges",
-        "destination":"Safe"
+  "content": {
+    "boxCount": 6,
+    "goods": [{
+        "textKey": "product-watches",
+        "destination": "Safe"
       },
       {
-        "text":"Appels",
-        "destination":"Freezer"
+        "textKey": "product-bananas",
+        "destination": "Freezer"
       },
       {
-        "text":"Natrium",
-        "destination":"Dangerous"
+        "textKey": "product-nitroglycerine",
+        "destination": "Dangerous"
       },
       {
-        "text":"Tulpen",
-        "destination":"Freezer"
+        "textKey": "product-fresh-tulips",
+        "destination": "Freezer"
       },
       {
-        "text":"Platinum ringen",
-        "destination":"Safe"
+        "textKey": "product-platinum-rings",
+        "destination": "Safe"
       },
       {
-        "text":"IJskasten",
-        "destination":"Normal"
+        "textKey": "product-refrigerators",
+        "destination": "Normal"
       },
       {
-        "text":"Boeken",
-        "destination":"Normal"
+        "textKey": "product-smartphones",
+        "destination": "Safe"
       },
       {
-        "text":"Stoelen",
-        "destination":"Normal"
+        "textKey": "product-insulin-pens",
+        "destination": "Freezer"
       },
       {
-        "text":"Koffers",
-        "destination":"Normal"
+        "textKey": "product-laptops",
+        "destination": "Safe"
       },
       {
-        "text":"Tafels",
-        "destination":"Normal"
-      },
-      {
-        "text":"Autobanden",
-        "destination":"Normal"
-      },
-      {
-        "text":"Smartphones",
-        "destination":"Safe"
-      },
-      {
-        "text":"Insulinespuiten",
-        "destination":"Freezer"
-      },
-      {
-        "text":"Rozen",
-        "destination":"Freezer"
-      },
-      {
-        "text":"Vaccins",
-        "destination":"Freezer"
-      },
-      {
-        "text":"Vlees",
-        "destination":"Freezer"
-      },
-      {
-        "text":"Aardbeien",
-        "destination":"Freezer"
-      },
-      {
-        "text":"Laptops",
-        "destination":"Safe"
-      },
-      {
-        "text":"Bankbiljetten",
-        "destination":"Safe"
-      },
-      {
-        "text":"Diamanten",
-        "destination":"Safe"
-      },
-      {
-        "text":"Microchips",
-        "destination":"Safe"
-      },
-      {
-        "text":"Vuurwerk",
-        "destination":"Dangerous"
-      },
-      {
-        "text":"Chloor",
-        "destination":"Dangerous"
-      },
-      {
-        "text":"Bleekmiddel",
-        "destination":"Dangerous"
-      },
-      {
-        "text":"Benzine",
-        "destination":"Dangerous"
-      },
-      {
-        "text":"Zoutzuur",
-        "destination":"Dangerous"
-      },
-      {
-        "text":"Carbiet",
-        "destination":"Dangerous"
-      },
-      {
-        "text":"Bestrijdingsmiddel",
-        "destination":"Dangerous"
+        "textKey": "product-sodium-hydroxide",
+        "destination": "Dangerous"
       }
     ]
   },
-  "translations": [
-    {
-        "key": "intro",
-        "value": "Pak de dozen één voor één van de lopende band en scan de streepjescode. Kies de opslaglocatie waar ze bewaard moeten worden. Gaat de deur open? Dan heb je het goed: \n\n Reguliere opslag\n Opslag van gevaarlijke goederen\n Veilige opslag\n Koude opslag"
+  "translations": [{
+      "key": "intro",
+      "value": "Pak de dozen één voor één van de lopende band en scan de streepjescode. Kies de opslaglocatie waar ze bewaard moeten worden. Gaat de deur open? Dan heb je het goed: \n\n Reguliere opslag\n Opslag van gevaarlijke goederen\n Veilige opslag\n Koude opslag"
     },
     {
-        "key": "intro-button",
-        "value": "Let's go!"
+      "key": "intro-button",
+      "value": "Let's go!"
     },
     {
-        "key": "start-game",
-        "value": "Start"
+      "key": "start-game",
+      "value": "Start"
     },
     {
-        "key": "dropping-boxes",
-        "value": "Pak de doos"
+      "key": "dropping-boxes",
+      "value": "Pak de doos"
     },
     {
-        "key": "find-barcode",
-        "value": "Vind de barcode en klik erop"
+      "key": "find-barcode",
+      "value": "Vind de barcode en klik erop"
     },
     {
-        "key": "store-box",
-        "value": "Breng de doos naar de juiste opslaglocatie"
+      "key": "store-box",
+      "value": "Breng de doos naar de juiste opslaglocatie"
     },
     {
-        "key": "box-stored-successful",
-        "value": "Helemaal goed"
+      "key": "box-stored-successful",
+      "value": "Helemaal goed"
     },
     {
-        "key": "box-stored-wrong",
-        "value": "Foute locatie voor dit product"
+      "key": "box-stored-wrong",
+      "value": "Foute locatie voor dit product"
     },
     {
-        "key": "game-over-header",
-        "value": "Game over :("
+      "key": "game-over-header",
+      "value": "Game over :("
     },
     {
-        "key": "game-over",
-        "value": "Je hebt teveel fouten gemaakt"
+      "key": "game-over",
+      "value": "Je hebt teveel fouten gemaakt"
     },
     {
-        "key": "win-header",
-        "value": "Yes!"
+      "key": "win-header",
+      "value": "Yes!"
     },
     {
-        "key": "win",
-        "value": "Goed gedaan! Doorgaan?"
+      "key": "win",
+      "value": "Goed gedaan! Doorgaan?"
     },
     {
-        "key": "result-try-again",
-        "value": "Opnieuw proberen"
+      "key": "result-try-again",
+      "value": "Opnieuw proberen"
     },
     {
-        "key": "result-exit",
-        "value": "Sluiten"
+      "key": "result-exit",
+      "value": "Sluiten"
+    },
+    {
+      "key": "product-watches",
+      "value": "Horloges"
+    },
+    {
+      "key": "product-bananas",
+      "value": "Bananen"
+    },
+    {
+      "key": "product-nitroglycerine",
+      "value": "Nitroglycerine"
+    },
+    {
+      "key": "product-fresh-tulips",
+      "value": "Verse tulpen"
+    },
+    {
+      "key": "product-platinum-rings",
+      "value": "Platinumringen"
+    },
+    {
+      "key": "product-refrigerators",
+      "value": "Koelkasten"
+    },
+    {
+      "key": "product-smartphones",
+      "value": "Smartphones"
+    },
+    {
+      "key": "product-insulin-pens",
+      "value": "Insulinepennen"
+    },
+    {
+      "key": "product-laptops",
+      "value": "Laptops"
+    },
+    {
+      "key": "product-sodium-hydroxide",
+      "value": "Sodium hydroxide"
+    },
+    {
+      "key": "product-fireworks",
+      "value": "Vuurwerk"
+    },
+    {
+      "key": "product-strawberries",
+      "value": "Aardbeien"
+    },
+    {
+      "key": "product-tyres",
+      "value": "Autobanden"
+    },
+    {
+      "key": "product-microchips",
+      "value": "Microchips"
+    },
+    {
+      "key": "product-pesticide",
+      "value": "Bestrijdingsmiddel"
     }
   ],
-  "levelsCompleted":[
-    {
-      "level":1,
-      "score":2,
-      "maxScore":2
-    }
-  ]
+  "levelsCompleted": [{
+    "level": 1,
+    "score": 2,
+    "maxScore": 2
+  }]
 }

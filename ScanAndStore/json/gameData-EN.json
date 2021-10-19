@@ -1,116 +1,172 @@
 {
-  "userId":7,
-  "settings":{
-    "muted":false
+  "userId": 7,
+  "settings": {
+    "muted": false
   },
   "boxCount": 6,
-  "content":{
-    "goods":[
-      {
-        "text":"Watches",
-        "destination":"Safe"
+  "content": {
+    "goods": [{
+        "textKey": "product-watches",
+        "destination": "Safe"
       },
       {
-        "text":"Bananas",
-        "destination":"Freezer"
+        "textKey": "product-bananas",
+        "destination": "Freezer"
       },
       {
-        "text":"Nitroglycerine",
-        "destination":"Dangerous"
+        "textKey": "product-nitroglycerine",
+        "destination": "Dangerous"
       },
       {
-        "text":"Fresh Tulips",
-        "destination":"Freezer"
+        "textKey": "product-fresh-tulips",
+        "destination": "Freezer"
       },
       {
-        "text":"Platinum rings",
-        "destination":"Safe"
+        "textKey": "product-platinum-rings",
+        "destination": "Safe"
       },
       {
-        "text":"Refrigerators",
-        "destination":"Normal"
+        "textKey": "product-refrigerators",
+        "destination": "Normal"
       },
       {
-        "text":"Smartphones",
-        "destination":"Safe"
+        "textKey": "product-smartphones",
+        "destination": "Safe"
       },
       {
-        "text":"Insulin pens",
-        "destination":"Freezer"
+        "textKey": "product-insulin-pens",
+        "destination": "Freezer"
       },
       {
-        "text":"Laptops",
-        "destination":"Safe"
+        "textKey": "product-laptops",
+        "destination": "Safe"
       },
       {
-        "text":" Sodium hydroxide",
-        "destination":"Dangerous"
+        "textKey": "product-sodium-hydroxide",
+        "destination": "Dangerous"
       }
     ]
   },
-  "translations": [
-    {
-        "key": "intro",
-        "value": "Products will pass on the conveyor belt. Grab them from the belt and find the bar code to scan. Find the best storage location in the warehouse to store goods:  \n\n Regular storage\n Dangerous Goods storage\n Safe storage\n Cold storage"
+  "translations": [{
+      "key": "intro",
+      "value": "Products will pass on the conveyor belt. Grab them from the belt and find the bar code to scan. Find the best storage location in the warehouse to store goods:  \n\n Regular storage\n Dangerous Goods storage\n Safe storage\n Cold storage"
     },
     {
-        "key": "intro-button",
-        "value": "Let's go!"
+      "key": "intro-button",
+      "value": "Let's go!"
     },
     {
-        "key": "start-game",
-        "value": "Get ready!"
+      "key": "start-game",
+      "value": "Get ready!"
     },
     {
-        "key": "dropping-boxes",
-        "value": "Grab a box from the belt"
+      "key": "dropping-boxes",
+      "value": "Grab a box from the belt"
     },
     {
-        "key": "find-barcode",
-        "value": "Find the barcode"
+      "key": "find-barcode",
+      "value": "Find the barcode"
     },
     {
-        "key": "store-box",
-        "value": "Bring the box to the correct storage location"
+      "key": "store-box",
+      "value": "Bring the box to the correct storage location"
     },
     {
-        "key": "box-stored-successful",
-        "value": "Very good"
+      "key": "box-stored-successful",
+      "value": "Very good"
     },
     {
-        "key": "box-stored-wrong",
-        "value": "Wrong location for this product"
+      "key": "box-stored-wrong",
+      "value": "Wrong location for this product"
     },
     {
-        "key": "game-over-header",
-        "value": "Game over :("
+      "key": "game-over-header",
+      "value": "Game over :("
     },
     {
-        "key": "game-over",
-        "value": "You have made too many mistakes. "
+      "key": "game-over",
+      "value": "You have made too many mistakes. "
     },
     {
-        "key": "win-header",
-        "value": "Yes!"
+      "key": "win-header",
+      "value": "Yes!"
     },
     {
-        "key": "win",
-        "value": "Well done. Continue?"
+      "key": "win",
+      "value": "Well done. Continue?"
     },
     {
-        "key": "result-try-again",
-        "value": "Try again"
+      "key": "result-try-again",
+      "value": "Try again"
     },
     {
-        "key": "result-exit",
-        "value": "Exit"
+      "key": "result-exit",
+      "value": "Exit"
+    },
+    {
+      "key": "product-watches",
+      "value": "Watches"
+    },
+    {
+      "key": "product-bananas",
+      "value": "Bananas"
+    },
+    {
+      "key": "product-nitroglycerine",
+      "value": "Nitroglycerine"
+    },
+    {
+      "key": "product-fresh-tulips",
+      "value": "Fresh Tulips"
+    },
+    {
+      "key": "product-platinum-rings",
+      "value": "Platinum rings"
+    },
+    {
+      "key": "product-refrigerators",
+      "value": "Refrigerators"
+    },
+    {
+      "key": "product-smartphones",
+      "value": "Smartphones"
+    },
+    {
+      "key": "product-insulin-pens",
+      "value": "Insulin pens"
+    },
+    {
+      "key": "product-laptops",
+      "value": "Laptops"
+    },
+    {
+      "key": "product-sodium-hydroxide",
+      "value": "Sodium hydroxide"
+    },
+    {
+      "key": "product-fireworks",
+      "value": "Fireworks"
+    },
+    {
+      "key": "product-strawberries",
+      "value": "Strawberries"
+    },
+    {
+      "key": "product-tyres",
+      "value": "Car tires"
+    },
+    {
+      "key": "product-microchips",
+      "value": "Microchips"
+    },
+    {
+      "key": "product-pesticide",
+      "value": "Pesticide"
     }
   ],
-  "levelsCompleted":[
-    {
-      "level":1,
-      "score":2,
-      "maxScore":2
-    }
-  ]
+  "levelsCompleted": [{
+    "level": 1,
+    "score": 2,
+    "maxScore": 2
+  }]
 }
