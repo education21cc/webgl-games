@@ -15,30 +15,30 @@
             padding: 0;
             margin: 0;
         }
-        
+
         #back {
             position: fixed;
             top: 16px;
             left: 8px;
             z-index: 2
         }
-        
+
         @media (orientation: portrait) {
             #back {
                 top: 32px;
             }
         }
-        
+
         div#gameContainer {
             background: transparent !important;
             position: absolute;
         }
-        
+
         div#gameContainer canvas {
             position: absolute;
             display: none;
         }
-        
+
         div#gameContainer canvas[data-pixel-art="true"] {
             position: absolute;
             image-rendering: optimizeSpeed;
@@ -52,9 +52,9 @@
             -ms-interpolation-mode: nearest-neighbor;
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="loading.css" rel="stylesheet"/>
-    
+
 </head>
 
 <body>
@@ -90,17 +90,17 @@
                     var canvas = instance.Module.canvas;
                     var container = canvas.parentElement;
                     canvas.style.display = "block";
-                    
+
                     function onResize() {
                         var w;
                         var h;
-                        
+
                         if (scaleToFit) {
                             w = window.innerWidth;
                             h = window.innerHeight;
-                            
+
                             var r = 635 / 375;
-                            
+
                             if (w * r > window.innerHeight) {
                                 w = Math.min(w, Math.ceil(h / r));
                             }
@@ -109,13 +109,13 @@
                             w = 375;
                             h = 635;
                         }
-                        
+
                         container.style.width = canvas.style.width = w + "px";
                         container.style.height = canvas.style.height = h + "px";
                         container.style.top = Math.floor((window.innerHeight - h) / 2) + "px";
                         container.style.left = Math.floor((window.innerWidth - w) / 2) + "px";
                     }
-                    
+
                     var scaleToFit;
                     try {
                         scaleToFit = !!JSON.parse("");
@@ -124,43 +124,44 @@
                     }
                     window.addEventListener('resize', onResize);
                     window.addEventListener('orientationchange', onResize);
-                    
+
                     onResize();
                 });
-                
+
                 window.setGameData = (gameData) => {
+                    window.GAMEDATA = gameData;
                     send({
                         type: 'setGameData',
                         data: gameData
                     });
                 }
-                
+
                 window.storeGameEvent = (gameEvent) => {
                     send({
                         type: 'gameEvent',
                         data: gameEvent
                     });
                 }
-                
+
                 function back() {
                     const callback = function() {
                         send({
                             type: 'back'
                         });
                     };
-                    // the callback is not working from unityInstance.Quit: 
+                    // the callback is not working from unityInstance.Quit:
                     // https://forum.unity.com/threads/quit-and-memory-cleanup.571210/
                     setTimeout(callback, 250);
-                    
+
                     unityInstance.Quit();
                 }
-                
+
                 window.exit = function() {
                     send({
                         type: 'exit'
                     });
                 }
-                
+
                 function send(payload) {
                     if (window.hasOwnProperty("webkit") && window.webkit.hasOwnProperty("messageHandlers")){
                         var stringifiedMessageObj = JSON.stringify(payload);
@@ -171,20 +172,19 @@
                         parent.postMessage(payload, '*');
                     }
                 }
-                
+
                 window.GAMEDATA = null;
                 window.addEventListener("message", receiveMessage, false);
                 function receiveMessage(msg) {
                     GAMEDATA = msg.data;
                 }
-                
+
                 function getGameData() {
                     return window.GAMEDATA;
-                }   
-                
+                }
+
             </script>
         </div>
     </body>
-    
+
     </html>
-    
