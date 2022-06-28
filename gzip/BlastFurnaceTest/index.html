@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Blast Furnace Test</title>
+    <title>Blast Furnace</title>
     <style>
         html,
         body {
@@ -83,7 +83,7 @@
                     codeUrl: "Build/BlastFurnace.wasm.unityweb",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "21CC",
-                    productName: "Blast Furnace Test",
+                    productName: "Blast Furnace",
                     productVersion: "0.0.1",
                 }).then(function (instance) {
                     unityInstance = instance;
@@ -99,15 +99,15 @@
                             w = window.innerWidth;
                             h = window.innerHeight;
 
-                            var r = 635 / 375;
+                            var r = 600 / 800;
 
                             if (w * r > window.innerHeight) {
                                 w = Math.min(w, Math.ceil(h / r));
                             }
                             h = Math.floor(w * r);
                         } else {
-                            w = 375;
-                            h = 635;
+                            w = 800;
+                            h = 600;
                         }
 
                         container.style.width = canvas.style.width = w + "px";
