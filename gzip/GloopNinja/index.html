@@ -3,8 +3,9 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>21CC Player</title>
+	<title>Gloop Ninja</title>
 	<style>
 		html,
 		body {
@@ -21,6 +22,12 @@
 			top: 16px;
 			left: 8px;
 			z-index: 2
+		}
+
+		@media (orientation: portrait) {
+			#back {
+				top: 32px;
+			}
 		}
 
 		div#gameContainer {
@@ -93,25 +100,25 @@
 	</div>
 	<div id="gameContainer">
 		<canvas id="unity-canvas" data-pixel-art=""></canvas>
-		<script src="Build/GloopNinja.loader.js"></script>
+		<script src="Build/WebGL.loader.js"></script>
 		<script>
 			var unityInstance;
 			performance.mark('startCreateUnityInstance');
 			var perf = firebase.performance();
 
 			const trace = perf.trace('createUnityInstanceTrace');
-			trace.putAttribute('game', "21CC Player");
+			trace.putAttribute('game', "Gloop Ninja");
 			trace.putAttribute('path', location.pathname.lastIndexOf('/index') == -1 ? location.pathname : location.pathname.substring(0, location.pathname.lastIndexOf('/index')));
 			trace.start();
 
 			createUnityInstance(document.querySelector("#unity-canvas"), {
-				dataUrl: "Build/GloopNinja.data.unityweb",
-				frameworkUrl: "Build/GloopNinja.framework.js.unityweb",
-				codeUrl: "Build/GloopNinja.wasm.unityweb",
+				dataUrl: "Build/WebGL.data.unityweb",
+				frameworkUrl: "Build/WebGL.framework.js.unityweb",
+				codeUrl: "Build/WebGL.wasm.unityweb",
 				streamingAssetsUrl: "StreamingAssets",
-				companyName: "21CC B.V.",
-				productName: "21CC Player",
-				productVersion: "1.042",
+				companyName: "21CC Education",
+				productName: "Gloop Ninja",
+				productVersion: "1.0",
 			}).then(function (instance) {
 				performance.mark('doneCreateUnityInstance');
 				trace.stop();
