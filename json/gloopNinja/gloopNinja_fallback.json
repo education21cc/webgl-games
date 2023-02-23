@@ -1,0 +1,98 @@
+{
+    "userId": 1,
+    "settings": {
+        "muted": false
+    },
+    "content": {
+
+    },
+
+    "translations": [
+      {"key": "guard1",
+      "value": "Hallo! Moet die groene fles naar Parijs?"},
+      {"key": "guard2",
+      "value": "Ze helpen je verder bij transport."},
+      
+      {"key": "round10-building1",
+      "value": "Wat is dat? Eerst een UN code!"},
+      {"key": "round10-building2",
+      "value": "Ah! Dat is groene bleekmiddel met UN code 1662."},
+      {"key": "round10-building2_2",
+      "value": "Nu nog een transport document."},
+      {"key": "round10-building3",
+      "value": "Zonder code en documenten geen doos."},
+      {"key": "round10-building4",
+      "value": "Zonder code, documenten en doos geen vervoer!"},
+
+      {"key": "round11-building1",
+      "value": "Okay, ik zorg voor een transport document."},
+      {"key": "round11-building1_2",
+      "value": "Nu nog een doos."},
+      {"key": "round11-building2",
+      "value": "Reeds geclassificeerd."},
+      {"key": "round11-building3",
+      "value": "Zonder document geen doos."},
+      {"key": "round11-building4",
+      "value": "Gaat kapot zonder doos."},
+
+      {"key": "round12-building1",
+      "value": "Je hebt al een document."},
+      {"key": "round12-building2",
+      "value": "Reeds geclassificeerd."},
+      {"key": "round12-building3",
+      "value": "Met document, nu kan ik het verpakken."},
+      {"key": "round12-building3_2",
+      "value": "Klaar voor vervoer!"},
+      {"key": "round12-building4",
+      "value": "Nee, sorry!"},
+
+      {"key": "round13-building1",
+      "value": "Alweer?"},
+      {"key": "round13-building2",
+      "value": "Alweer?"},
+      {"key": "round13-building3",
+      "value": "Alweer?"},
+      {"key": "round13-building4",
+      "value": "Goed verpakt, rijd ik het naar Parijs!"},
+
+      {"key": "building1_type0",
+      "value": "Dit moet een UN code krijgen."},
+      {"key": "building1_type1",
+      "value": ""},
+      {"key": "building1_type2",
+      "value": "Dit moet verpakt worden."},
+      {"key": "building1_type3",
+      "value": "Breng dit naar transport."},
+
+      {"key": "building2_type0",
+      "value": ""},
+      {"key": "building2_type1",
+      "value": "Een transport document is nodig."},
+      {"key": "building2_type2",
+      "value": "Dit moet verpakt worden."},
+      {"key": "building2_type3",
+      "value": "Breng dit naar transport."},
+
+      {"key": "building3_type0",
+      "value": "Dit moet een UN code krijgen."},
+      {"key": "building3_type1",
+      "value": "Een transport document is nodig."},
+      {"key": "building3_type2",
+      "value": ""},
+      {"key": "building3_type3",
+      "value": "Breng dit naar transport."},
+
+      {"key": "building4_type0",
+      "value": "Dit moet een UN code krijgen."},
+      {"key": "building4_type1",
+      "value": "Een UN code en transport document zijn nodig."},
+      {"key": "building4_type2",
+      "value": "Dit moet verpakt worden."},
+      {"key": "building4_type3",
+      "value": ""}
+    ],
+
+    "levelsCompleted": [
+
+    ]
+}
